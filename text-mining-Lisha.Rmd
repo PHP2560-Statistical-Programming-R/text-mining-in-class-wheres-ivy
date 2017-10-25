@@ -55,6 +55,8 @@ We will spend the next 2 weeks working on analyzing textual data in R. You will 
 library("twitteR")
 library("ROAuth")
 library(stringr)
+library(rebus)
+library(stringi)
 library(dplyr)
 library(tidytext)
 consumer_key="uxezKTgNY6J9vDV2IN1QgKaHd"
@@ -62,17 +64,21 @@ consumer_secret="ezdvqK1w1vgA3PnyioIU56bW73DZmo9AWFfptFNsn7bz0Cs44A"
 access_token="3759994332-tdFWvTsGAedAgvvw6vCiPkEFbnWedxCnpR83FUe"
 access_secret="LXPvROXMJaN2e9WOcgqLTVTv0XahEM9ksE75QVm0sBxBZ"
 setup_twitter_oauth(consumer_key,consumer_secret,access_token,access_secret)
-Tsingtao<-searchTwitter("Tsingtao",1000, lang="en",since="2015-10-18",until = "2017-10-18")
+Tsingtao<-userTimeline("Tsingtao",n=1000)
 ```
 
 ```{r}
 df<-do.call("rbind",lapply(Tsingtao,as.data.frame))
+All_beer<-read.csv("AllBeerTweets.csv")
+url_pattern <-"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+"
+at_pattern2 <- "@\\w+"
+All_beer$text<-str_replace_all(All_beer$text,url_pattern, replacement = "")
+All_beer$text<-str_replace_all(All_beer$text,at_pattern2, replacement = "")
 tweets<-df %>%
   group_by(text) %>%
   unnest_tokens(word,text) %>%
   ungroup() %>%
   select(word)
-Tsingtao_sentiment<-tweets %>%
-  inner_join(get_sentiments("nrc"))
+
 ```
 
