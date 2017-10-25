@@ -55,10 +55,12 @@ We will spend the next 2 weeks working on analyzing textual data in R. You will 
 #install.packages("streamR")
 library(twitteR)
 library(ROAuth)
-library(twitteR)
-library(streamR)
 library(tidyverse)
-
+library(tidytext)
+library(tm)
+library(lubridate)
+library(textclean)
+library(sentimentr)
 ```
 
 Check out this website (http://politicaldatascience.blogspot.com/2015/12/rtutorial-using-r-to-harvest-twitter.html)
@@ -75,6 +77,46 @@ setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
 tweets <- userTimeline("GuinnessUS", n=3200)
 
 tw.df <- twListToDF(tweets)
+```
+
+From the collected tweets, it seems that what we need is (text, replyTOSN, created). 
+```{r}
+tweets.edit <- tw.df %>% 
+  select(text, replyToSN, created) %>% 
+  group_by(created) 
+
+# fix date 
+tweets.edit$month <- month(tweets.edit$created)
+tweets.edit$day <- day(tweets.edit$created)
+tweets.edit$year <- year(tweets.edit$created)
+```
+
+```{r}
+#cleaned text 
+tweets.edit$text <- replace_non_ascii(tweets.edit$text)
+tweets.edit$text <- mgsub(tweets.edit$text, c("\\s*http\\S+\\s*", "@\\w+"), c("",""), fixed = FALSE)
+tweets.edit$text <- mgsub(tweets.edit$text, "#", "ht")
+tweets.edit$text <- strip(tweets.edit$text)
+```
+
+Almost done at this point, all we need to do is the sentiment analysis, though I perfer to use sentimentR as opposed to what we did in the datacamp courses because it leverages valence shifters, and views the entire tweet as a whole. But I'll do both...
+
+```{r}
+#take out text, tidy it, word per row, and run sentiment analysis via inner join
+tweets <- tweets.edit$text
+tweets.td <- tidy(tweets)
+
+tweet.words <- tweets.td %>%
+  unnest_tokens(word, x) %>% 
+  anti_join(stop_words)
+
+tweet_sentiment <- tweet.words %>%
+  inner_join(get_sentiments("bing"), by = "word") %>%
+  count(word, sentiment, sort = TRUE) %>%
+  ungroup()
+
+
+tweets.edit.sentiment <- sentiment_by(tweets.edit$text)
 ```
 
 
