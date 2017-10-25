@@ -92,7 +92,7 @@ table(AllBeerTweets$screenName)
 
 
 head(AllBeerTweets)
-write.csv(AllBeerTweets, "AllBeerTweets.csv")
+#write.csv(AllBeerTweets, "AllBeerTweets.csv")
 
 Tweets <- read.csv("AllBeerTweets.csv")
 Tweets2 <- Tweets
@@ -125,59 +125,8 @@ Tweets2 <- Tweets2 %>%
   dplyr::select(text, favoriteCount, replyToSN, screenName, retweetCount,
                 date.stamp, weekday)
 
-write.csv(Tweets2, "AllCleanedTweets.csv")
+#write.csv(Tweets2, "AllCleanedTweets.csv")
 ```
-
-
-#Extract the images/emojis.
-
-Information from https://lyons7.github.io/portfolio/2017-10-04-emoji-dictionary/
-
-We had to use the package "DataCombine", because stringr was not working with the Unicode for emojis. Once we convert all of the emojis to regular text, we will switch back to stringr for the analysis.
-
-
-```{r}
-#Emojis in capital letters with no spaces
-emoticons <- read.csv("Emoji Dictionary 2.1.csv")
-sample_n(emoticons, 1)
-names(emoticons)
-
-emoticons <- emoticons %>% 
-  dplyr::rename(Name = ï..Name)
-
-head(emoticons)
-
-tweets$text2 <- iconv(tweets$text, from = "latin1", to = "ascii", 
-                    sub = "byte")
-head(tweets$text2)
-
-tweets <- FindReplace(data = tweets, Var = "text2", 
-                      replaceData = emoticons,
-                      from = "R_Encoding", to = "Name", 
-                      exact = FALSE)
-
-emojipattern <- as.character(emoticons$R_Encoding)
-emojis <- str_extract_all(tweets$text, pattern = emojipattern)
-head(emojis)
-
-
-##Emojis with spaces
-emoticonspace <- read.csv("emojis workbook.csv")
-sample_n(emoticonspace, 1)
-names(emoticonspace)
-
-tweets$text2 <- iconv(tweets$text, from = "latin1", to = "ascii", 
-                    sub = "byte")
-head(tweets$text2)
-
-tweets <- FindReplace(data = tweets, Var = "text2", 
-                      replaceData = emoticonspace,
-                      from = "ftu8", to = "EN", 
-                      exact = FALSE)
-
-
-````
-
 
 
 Ideas:
