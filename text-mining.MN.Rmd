@@ -20,7 +20,7 @@ Do the above. Can't think of a data source?
 - `NYTimes` or `USCongress` from the `RTextTools` package
 - Harry Potter Complete 7 Books text
 
-```{r}
+```{r eval=FALSE}
 if (packageVersion("devtools") < 1.6) {
   install.packages("devtools")
 }
@@ -52,13 +52,30 @@ We will spend the next 2 weeks working on analyzing textual data in R. You will 
 ```{r}
 #install.packages("twitteR")
 #install.packages("ROAuth")
-library("twitteR")
-library("ROAuth")
+#install.packages("streamR")
+library(twitteR)
+library(ROAuth)
+library(twitteR)
+library(streamR)
+library(tidyverse)
+
 ```
 
 Check out this website (http://politicaldatascience.blogspot.com/2015/12/rtutorial-using-r-to-harvest-twitter.html)
 
+```{r echo=FALSE}
+consumer_key <- "61QAqhSHk4n1wIGkkSJd4uWYc"
+consumer_secret <- "Wp5fauhEPj66F3IsTJVeAznJrq6ozNBRhrfyIweMjiLhsV4IV0"
+access_token <- "903307271752605696-3YvAs5p7R7y8ASXXLCQWRUnW0veUNFB"
+access_secret <- "PyrBLoT3ScECCfOsP2MlzOIW8MQW11lLsnihXu8r8k24q"
+
+setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
+```
 ```{r}
+tweets <- userTimeline("GuinnessUS", n=3200)
+
+tw.df <- twListToDF(tweets)
+```
 
 
 
