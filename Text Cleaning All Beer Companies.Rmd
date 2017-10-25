@@ -1,0 +1,196 @@
+---
+title: "Text Cleaning"
+author: "Where's Ivy"
+date: "October 25, 2017"
+output: html_document
+---
+
+##Load Libraries
+```{r}
+#install.packages("twitteR")
+#install.packages("ROAuth")
+library(devtools)
+library(twitteR)
+library(ROAuth)
+library(dplyr)
+library(tidytext)
+library(lubridate)
+library(stringr)
+library(stringi)
+library(DataCombine)
+library(rebus)
+```
+
+##Twitter App authentication codes
+```{r}
+#Enter authentication codes
+
+#consumer_key <- ' '
+#consumer_secret <- ' '
+#access_token <- ' '
+#access_secret <- ' '
+#
+#setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
+#
+```
+
+## Pull Budlight tweets
+```{r, eval = F}
+#BudLightTweets <- searchTwitter('from:@budlight', since='2015-10-18',
+#                                until='2017-10-18', resultType="recent", n=1000)
+#
+#temp <- searchTwitter('from:@budlight', since='2015-10-18',
+#                                until='2017-10-18', resultType="recent",
+#                      n=1000, retryOnRateLimit = 120)
+#
+#test <- userTimeline('@budlight', since='2014-10-18',
+#                     includeRts = F, excludeReplies = F, n=2000)
+#
+#test.df <- twListToDF(test)
+```
+
+##Quickly View the tweets
+```{r}
+test.df %>% 
+  dplyr::select(created, text, truncated, replyToSN, favoriteCount, retweetCount)
+
+test.df %>% 
+  arrange(-favoriteCount) %>% 
+  head(6)
+
+replies <- test.df %>% 
+  filter(!is.na(replyToSN)) %>% 
+  dplyr::select(created, text, truncated, replyToSN, favoriteCount, retweetCount) %>% 
+  arrange(-favoriteCount)
+
+nonreplies <- test.df %>% 
+  filter(is.na(replyToSN)) %>% 
+  dplyr::select(created, text, truncated, replyToSN, favoriteCount, retweetCount) %>% 
+  arrange(-favoriteCount)
+
+##There are only 66 nonreplies. This is because even in BudLight's own tweets they @ a team or company or something, therefore, we need to just look at the most popular tweeets.
+
+tweets <- test.df %>% 
+  dplyr::select(created, text, truncated, replyToSN, favoriteCount, retweetCount)
+
+#write.csv(test.df, "tweetsBudLight.csv")
+```
+
+##Load Tweets and combine all beer company files.
+```{r}
+setwd("C:/Users/dyam/Dropbox (Brown)/Brown/Statistical Programming/text-mining-in-class-wheres-ivy")
+
+BudLight <- read.csv("tweetsBudLight.csv")
+DosEquis <- read.csv("DosEquistweets2.csv")
+guinness <- read.csv("guinness.csv")
+Tsingtao <- read.csv("Tsingtao.csv")
+BlueMoonTweets <- read.csv("BlueMoonTweets.csv")
+
+AllBeerTweets <- bind_rows(BudLight, DosEquis, guinness, Tsingtao, BlueMoonTweets)
+
+table(AllBeerTweets$screenName)
+
+
+head(AllBeerTweets)
+write.csv(AllBeerTweets, "AllBeerTweets.csv")
+
+Tweets <- read.csv("AllBeerTweets.csv")
+Tweets2 <- Tweets
+```
+
+##Clean tweets
+```{r}
+#Reformat the Date Variable
+Tweets2 <- Tweets2 %>%
+  mutate(created = as.character(created)) %>% 
+  mutate(date.stamp = ymd_hms(created)) %>% 
+  mutate(weekday = wday(date.stamp, label = T))
+
+#Extract the @ to show who the tweet is replying to or who they are tagging.
+at_pattern2 <- "@\\w+"
+
+Tweets2$text <- str_replace_all(Tweets2$text, at_pattern2, replacement = "")
+
+#Remove the # in a Hash Tag keep the rest of it as plain text
+hashtag_pattern <- "#" 
+Tweets2$text <- str_replace_all(Tweets2$text, pattern = hashtag_pattern,
+                                replacement = "")
+
+#Remove the url link
+url_pattern <-"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+"
+
+Tweets2$text <- str_replace_all(Tweets2$text, url_pattern, replacement = "")
+
+Tweets2 <- Tweets2 %>% 
+  dplyr::select(text, favoriteCount, replyToSN, screenName, retweetCount,
+                date.stamp, weekday)
+
+write.csv(Tweets2, "AllCleanedTweets.csv")
+```
+
+
+#Extract the images/emojis.
+
+Information from https://lyons7.github.io/portfolio/2017-10-04-emoji-dictionary/
+
+We had to use the package "DataCombine", because stringr was not working with the Unicode for emojis. Once we convert all of the emojis to regular text, we will switch back to stringr for the analysis.
+
+
+```{r}
+#Emojis in capital letters with no spaces
+emoticons <- read.csv("Emoji Dictionary 2.1.csv")
+sample_n(emoticons, 1)
+names(emoticons)
+
+emoticons <- emoticons %>% 
+  dplyr::rename(Name = ï..Name)
+
+head(emoticons)
+
+tweets$text2 <- iconv(tweets$text, from = "latin1", to = "ascii", 
+                    sub = "byte")
+head(tweets$text2)
+
+tweets <- FindReplace(data = tweets, Var = "text2", 
+                      replaceData = emoticons,
+                      from = "R_Encoding", to = "Name", 
+                      exact = FALSE)
+
+emojipattern <- as.character(emoticons$R_Encoding)
+emojis <- str_extract_all(tweets$text, pattern = emojipattern)
+head(emojis)
+
+
+##Emojis with spaces
+emoticonspace <- read.csv("emojis workbook.csv")
+sample_n(emoticonspace, 1)
+names(emoticonspace)
+
+tweets$text2 <- iconv(tweets$text, from = "latin1", to = "ascii", 
+                    sub = "byte")
+head(tweets$text2)
+
+tweets <- FindReplace(data = tweets, Var = "text2", 
+                      replaceData = emoticonspace,
+                      from = "ftu8", to = "EN", 
+                      exact = FALSE)
+
+
+````
+
+
+
+Ideas:
+1.	Youth Lexicon and alcohol marketing
+2.	Thematic Topic modeling and beer
+3.	Number of tweets correlated with market revenue of fiscal quarters
+4.	Topic modeling M-F
+5.	Topics of Engagement based on tweeting @, based on replies, what is the brand talking about in these replies 
+
+Assignments:
+Bud lite - Derek
+Dos Equis - Tess
+Guinness- Michael
+Blue Moon - David
+Tsingtao - Lisha
+
