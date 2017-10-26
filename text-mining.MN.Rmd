@@ -50,17 +50,17 @@ We will spend the next 2 weeks working on analyzing textual data in R. You will 
 
 ##Twitter Extraction Libraries
 ```{r}
-#install.packages("twitteR")
-#install.packages("ROAuth")
-#install.packages("streamR")
 library(twitteR)
 library(ROAuth)
 library(tidyverse)
 library(tidytext)
 library(tm)
 library(lubridate)
-library(textclean)
+library(stringr)
 library(sentimentr)
+library(stm)
+
+
 ```
 
 Check out this website (http://politicaldatascience.blogspot.com/2015/12/rtutorial-using-r-to-harvest-twitter.html)
@@ -73,15 +73,16 @@ access_secret <- "PyrBLoT3ScECCfOsP2MlzOIW8MQW11lLsnihXu8r8k24q"
 
 setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
 ```
-```{r}
-tweets <- userTimeline("GuinnessUS", n=3200)
+```{r, eval=FALSE}
+guinness <- userTimeline("GuinnessUS", n=2000, since="2014-01-01")
 
-tw.df <- twListToDF(tweets)
+guinness.td <- twListToDF(guinness)
+write_csv(guinness.td, "guinness.csv")
 ```
 
 From the collected tweets, it seems that what we need is (text, replyTOSN, created). 
-```{r}
-tweets.edit <- tw.df %>% 
+```{r, eval=FALSE}
+tweets.edit <- guinnes.td %>% 
   select(text, replyToSN, created) %>% 
   group_by(created) 
 
@@ -91,17 +92,10 @@ tweets.edit$day <- day(tweets.edit$created)
 tweets.edit$year <- year(tweets.edit$created)
 ```
 
-```{r}
-#cleaned text 
-tweets.edit$text <- replace_non_ascii(tweets.edit$text)
-tweets.edit$text <- mgsub(tweets.edit$text, c("\\s*http\\S+\\s*", "@\\w+"), c("",""), fixed = FALSE)
-tweets.edit$text <- mgsub(tweets.edit$text, "#", "ht")
-tweets.edit$text <- strip(tweets.edit$text)
-```
 
 Almost done at this point, all we need to do is the sentiment analysis, though I perfer to use sentimentR as opposed to what we did in the datacamp courses because it leverages valence shifters, and views the entire tweet as a whole. But I'll do both...
 
-```{r}
+```{r, eval=FALSE}
 #take out text, tidy it, word per row, and run sentiment analysis via inner join
 tweets <- tweets.edit$text
 tweets.td <- tidy(tweets)
@@ -120,4 +114,46 @@ tweets.edit.sentiment <- sentiment_by(tweets.edit$text)
 ```
 
 
+After playing around, we decided it was best to combine all the raw data and then begin cleaning it. 
+```{r, eval=FALSE}
+clean.beer <- read_csv("AllCleanedTweets.csv")
 
+#just want specific data as meta data --> data that would serve as a covariate: beer company and date 
+
+beer.data <- clean.beer %>% 
+  select(X1, text, screenName, weekday)
+
+#process the data via STM textProcessor 
+proc.beer <- textProcessor(documents = beer.data$text, metadata = beer.data)
+
+out <- prepDocuments(proc.beer$documents, proc.beer$vocab, proc.beer$meta)
+docs <- out$documents 
+vocab <- out$vocab
+meta <- out$meta
+
+#need to instal Rtsne, rsvd, and geometry
+  #install.packages("Rtsne")
+  #install.packages("rsvd")
+  #install.packages("geometry")
+
+#from here, we can run the stm function for topic modelling 
+beerModelFit <- stm(documents = docs,
+                    vocab = vocab,
+                    K =  25, #we can set k to pretty much anything 
+                    prevalence =~ screenName + weekday,
+                    data = meta,
+                    init.type = "Spectral",
+                    seed=5674309) 
+
+#K determines the number of topics, we can use searchK to to figure out the appropriate number of topics
+set.seed(5679305)
+K <- c(5,10,15,20)
+storage <- searchK(docs,
+                   vocab,
+                   K,
+                   prevalence=~ rating + s(day),
+                   data = meta)
+
+```
+
+```
