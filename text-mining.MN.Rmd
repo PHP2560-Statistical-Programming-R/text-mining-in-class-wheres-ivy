@@ -59,7 +59,7 @@ library(lubridate)
 library(stringr)
 library(sentimentr)
 library(stm)
-
+library(knitr)
 
 ```
 
@@ -115,7 +115,7 @@ tweets.edit.sentiment <- sentiment_by(tweets.edit$text)
 
 
 After playing around, we decided it was best to combine all the raw data and then begin cleaning it. 
-```{r, eval=FALSE}
+```{r}
 clean.beer <- read_csv("AllCleanedTweets.csv")
 
 #just want specific data as meta data --> data that would serve as a covariate: beer company and date 
@@ -127,23 +127,28 @@ beer.data <- clean.beer %>%
 proc.beer <- textProcessor(documents = beer.data$text, metadata = beer.data)
 
 out <- prepDocuments(proc.beer$documents, proc.beer$vocab, proc.beer$meta)
-docs <- out$documents 
-vocab <- out$vocab
-meta <- out$meta
+beerdocs <- out$documents 
+beervocab <- out$vocab
+beermeta <- out$meta
+```
 
+```{r, eval=F}
 #need to instal Rtsne, rsvd, and geometry
   #install.packages("Rtsne")
   #install.packages("rsvd")
   #install.packages("geometry")
 
 #from here, we can run the stm function for topic modelling 
-beerModelFit <- stm(documents = docs,
+
+set.seed(123)
+beerModelFit <- stm(document = docs,
                     vocab = vocab,
-                    K =  25, #we can set k to pretty much anything 
+                    K =  30, #we can set k to pretty much anything, used seearchK to find reasonable value
                     prevalence =~ screenName + weekday,
                     data = meta,
                     init.type = "Spectral",
-                    seed=5674309) 
+                    ) 
+
 
 #K determines the number of topics, we can use searchK to to figure out the appropriate number of topics
 set.seed(5679305)
@@ -151,9 +156,32 @@ K <- c(5,10,15,20)
 storage <- searchK(docs,
                    vocab,
                    K,
-                   prevalence=~ rating + s(day),
+                   prevalence=~ screenName + weekday,
                    data = meta)
+
+#reasonable K set at 30, model converaged after 423 iterations, saving model to be used for later 
+saveRDS(beerModelFit, "beerModel.rds")
 
 ```
 
+The STM package leverages metadata as part of the topic modelling process. This is denoted by the prevalence argument. It takes in the metadata: sceenName (the beer company) & weekday, and provides us with 30 topics for which the tweets can fall under. The two metadata is describing how the prevalence of the topics is influenced by the two covariates -- who is tweeting, and on what day are they tweeting. 
+
+The first reason why screenName is an important covariate is quite simple: who is tweeting matters. We also have reason to believe that the topic of their tweets will change based on the day, ex. TGIF, or Monday night Football. Tess, will be the one who will help explore topic prevalance given day of the week. 
+
+For now, I will focus on topic prevalence given the beer company. Who is tweeting, and what are they tweeting about? However, I am still using the weekday covariate in order to train my model to be as accurate as possible. Just because I will not focus on weekday does not mean that it is not necessary when developing our model. STM's greatest advantage over other topic modelling techniques is its ability to include metadata to help better describe and train the topic outputs. 
+
+In order to investigate the beer companies, we need to first answer some more questions: 
+- "What are the most popular topics?"
+- "Who tweets about these topics the most?"
+- "Which topics recieve the most engagement? (Favorites & Retweets)"
+
+Thus we need to identify the topics with the highest frequenct among our tweets, visualize who is tweeting them, and then organize them engagement. 
+```{r, include=T}
+BeerModel <- readRDS("beerModel.rds")
+
+BeerDocs <- beermeta$text
+
+thoughts <- findThoughts(BeerModel, BeerDocs, topics=c(1,2,3), n=5)
+
+plot(thoughts)
 ```
