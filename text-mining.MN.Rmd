@@ -139,14 +139,20 @@ beermeta <- out$meta
   #install.packages("geometry")
 
 #from here, we can run the stm function for topic modelling 
+#there was a bug when k=0 it wont run, talked to creator, got it fixed, but need to install dev branch 
+
+install.packages("Rcpp")
+install.packages("devtools")
+install.packages("data.table")
+devtools::install_github("bstewart/stm", ref="development")
 
 set.seed(123)
-beerModelFit <- stm(document = docs,
-                    vocab = vocab,
-                    K =  30, #we can set k to pretty much anything, used seearchK to find reasonable value
+beerModelFit <- stm(document = beerdocs,
+                    vocab = beervocab,
+                    K =  0, #we can set k=0 to allow the program to find appropiate K as a starting point, later test K around it with searchK
                     prevalence =~ screenName + weekday,
-                    data = meta,
-                    init.type = "Spectral",
+                    data = beermeta,
+                    init.type = "Spectral"
                     ) 
 
 
@@ -161,6 +167,9 @@ storage <- searchK(docs,
 
 #reasonable K set at 30, model converaged after 423 iterations, saving model to be used for later 
 saveRDS(beerModelFit, "beerModel.rds")
+
+#k=0, converged after 80 iterations, 49 topics 
+saveRDS(beerModelFit, "beerModel49.rds")
 
 ```
 
@@ -177,11 +186,19 @@ In order to investigate the beer companies, we need to first answer some more qu
 
 Thus we need to identify the topics with the highest frequenct among our tweets, visualize who is tweeting them, and then organize them engagement. 
 ```{r, include=T}
-BeerModel <- readRDS("beerModel.rds")
+#First let's just play around with some functions in STM -> findThoughts will help us locate the document most closely associated with each topic, this will come in handy later when we know which topic is most frequent
 
-BeerDocs <- beermeta$text
+BeerModel49 <- readRDS("beerModel49.rds")
 
-thoughts <- findThoughts(BeerModel, BeerDocs, topics=c(1,2,3), n=5)
+thoughts <- findThoughts(BeerModel49, out$meta$text, topics=c(29), n=3)
 
 plot(thoughts)
+```
+
+I want to check to see if the documents pulled up from findThoughts matches the one in the metadata. We can do this with plotQuotes(thoughts), it will let us know which document it is using and then we can index to see if they match. 
+
+```{r}
+plotQuote(thoughts) #using 3876, 2509, 6260 
+
+out$meta$text[c(3876,2509,6260)] #looks good! 
 ```
