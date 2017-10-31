@@ -59,6 +59,8 @@ library(rebus)
 library(stringi)
 library(dplyr)
 library(tidytext)
+library(lubridate)
+library(ggplot2)
 consumer_key="uxezKTgNY6J9vDV2IN1QgKaHd"
 consumer_secret="ezdvqK1w1vgA3PnyioIU56bW73DZmo9AWFfptFNsn7bz0Cs44A"
 access_token="3759994332-tdFWvTsGAedAgvvw6vCiPkEFbnWedxCnpR83FUe"
@@ -68,17 +70,57 @@ Tsingtao<-userTimeline("Tsingtao",n=1000)
 ```
 
 ```{r}
+#Data Cleaning
 df<-do.call("rbind",lapply(Tsingtao,as.data.frame))
 All_beer<-read.csv("AllBeerTweets.csv")
-url_pattern <-"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+"
-at_pattern2 <- "@\\w+"
-All_beer$text<-str_replace_all(All_beer$text,url_pattern, replacement = "")
-All_beer$text<-str_replace_all(All_beer$text,at_pattern2, replacement = "")
-tweets<-df %>%
-  group_by(text) %>%
-  unnest_tokens(word,text) %>%
-  ungroup() %>%
-  select(word)
 
+#Remove urls, @, and #
+url_pattern <-"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+"
+at_pattern <- "@\\w+"
+hashtag_pattern <- "#" 
+All_beer$text<-str_replace_all(All_beer$text,url_pattern, replacement = "")
+All_beer$text<-str_replace_all(All_beer$text,at_pattern, replacement = "")
+All_beer$text<-str_replace_all(All_beer$text,hashtag_pattern,replacement = "")
+
+#Create dates
+tweets<- All_beer %>%
+  mutate(created = as.character(created)) %>% 
+  mutate(date.stamp = ymd_hms(created)) %>% 
+  mutate(weekday = wday(date.stamp, label = T))
+
+#Select useful columns
+tweets<-tweets %>%
+  select(text, favoriteCount, replyToSN, screenName, retweetCount,
+                date.stamp, weekday)
+
+```
+
+```{r}
+#QUESTION: Which company has the highest retweets in each month?
+
+#Split date into year, month, day, and time, and select columns according to the question
+tweets$date<-as.Date(tweets$date.stamp)
+tweets$yearmon<-format(tweets$date.stamp,"%Y-%m")
+
+tweets <- tweets %>%
+  mutate(year=as.numeric(format(tweets$date, format = "%Y")),
+         month = as.numeric(format(tweets$date, format = "%m")),
+         day = as.numeric(format(tweets$date, format = "%d"))) %>%
+  filter(year %in% c(2016,2017)) %>%
+  select(text, screenName,year,month,day,yearmon,retweetCount)
+
+#Count retweets
+retweets <- tweets %>%
+  group_by(screenName,yearmon) %>%
+  summarise(number.of.retweets=sum(retweetCount)) %>%
+  ungroup() %>%
+  group_by(yearmon) %>%
+  filter(number.of.retweets==max(number.of.retweets))
+
+#ggplot
+ggplot(retweets,aes(x=yearmon, y=number.of.retweets,color=screenName)) +
+  geom_point() + xlab("Month") +ylab("Retweets Count") + 
+  ggtitle("Highest number of retweets by month") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5))
 ```
 
