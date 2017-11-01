@@ -114,8 +114,12 @@ top_tweets <-clean_tweets %>%
   arrange(desc(n))
 
 #ggplot
+dir.create("graph/", showWarnings = FALSE)
+png('graph/scatterplot.png')
+
 ggplot(top_tweets,aes(x=word, y=n,group=1)) +
   geom_point() + geom_line(color="black")+xlab("words") +ylab("Frequency") + 
   ggtitle("Commmon words among tweets with highest number of retweets in each month") + theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5))
+
 ```
 
