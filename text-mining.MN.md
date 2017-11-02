@@ -249,6 +249,34 @@ saveRDS(beerModelFit, "beerModel.rds")
 saveRDS(beerModelFit, "beerModel49.rds")
 ```
 
+We now have two potential models, but still, which one should we used? After running stm() with K=0, we had the algorithim pick out some Ks: 49, 51, 56, 59. So we will set K around that and run the searchK() function. It took forever, but I saved the output as an R object, and we can plot the results and see.
+
+``` r
+searchk.test <- read_rds("searchk.rds")
+
+plot(searchk.test)
+
+searchk.df <- as.data.frame(searchk.test$results)
+
+#seems like 44, 49, 51 are all reasonable K, since we already have 49, lets run the model at k = 44 and compare
+
+beermodel44 <- stm(document = beerdocs,
+                    vocab = beervocab,
+                    K =  44,
+                    prevalence =~ screenName + weekday,
+                    data = beermeta,
+                    init.type = "Spectral",
+                    seed = 123456
+                    ) 
+
+saveRDS(beermodel44, "beermodel44.rds")
+
+thoughts44 <- findThoughts(beermodel44, beermeta$text, topics = c(25,38), n=3)
+plot(thoughts44)
+```
+
+There doesn't seem to be much of a difference between 44 topics and 49 topics. So we will stick with 49 topics, especially given the jump in residuals onwards after 49.
+
 The STM package leverages metadata as part of the topic modelling process. This is denoted by the prevalence argument. It takes in the metadata: sceenName (the beer company) & weekday, and provides us with 30 topics for which the tweets can fall under. The two metadata is describing how the prevalence of the topics is influenced by the two covariates -- who is tweeting, and on what day are they tweeting.
 
 The first reason why screenName is an important covariate is quite simple: who is tweeting matters. We also have reason to believe that the topic of their tweets will change based on the day, ex. TGIF, or Monday night Football. Tess, will be the one who will help explore topic prevalance given day of the week.
@@ -269,7 +297,7 @@ thoughts <- findThoughts(BeerModel49, beermeta$text, topics=c(48), n=3)
 plot(thoughts)
 ```
 
-![](text-mining.MN_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-9-1.png)
+![](text-mining.MN_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-10-1.png)
 
 I want to check to see if the documents pulled up from findThoughts matches the one in the metadata. We can do this with plotQuotes(thoughts), it will let us know which document it is using and then we can index to see if they match.
 
@@ -369,7 +397,7 @@ We know *who* tweeted *what* and *when* (on what day). From this we can do the f
     ## 10       tsingtao    43   229
     ## # ... with 151 more rows
 
-![](text-mining.MN_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-12-1.png)
+![](text-mining.MN_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-13-1.png)
 
     ## # A tibble: 161 × 3
     ##        screenName topic favorites
@@ -386,6 +414,21 @@ We know *who* tweeted *what* and *when* (on what day). From this we can do the f
     ## 10       DosEquis    11      1684
     ## # ... with 151 more rows
 
-Sweet, now we know which topic is tweeted the most by our beer companies, and also which topics get favorited the most! With this, we now have some topics of interest that is worth further investigation: *Guinness: Topic 39 *BlueMoon: Topic 41 *DosEquis: Topic 13 *Budlight: Topic 26 \*Tsingtao: Topic 43
+    ## # A tibble: 5 × 4
+    ##       screenName favorited ntweets     ratio
+    ##            <chr>     <int>   <int>     <dbl>
+    ## 1       DosEquis     58197    1616 36.012995
+    ## 2     GuinnessUS     12948     919 14.089227
+    ## 3 BlueMoonBrewCo      7146    2996  2.385180
+    ## 4       budlight      6796    1917  3.545123
+    ## 5       tsingtao      2518     837  3.008363
+
+Sweet, now we know which topic is tweeted the most by our beer companies, and also which topics get favorited the most! With this, we now have some topics of interest that is worth further investigation:
+
+1.  Guinness: Topic 39
+2.  BlueMoon: Topic 41
+3.  DosEquis: Topic 13
+4.  Budlight: Topic 26
+5.  Tsingtao: Topic 43
 
 There are multiple ways we can do on about investigating out topics, but since we already have the theta scores for each tweet, we can filter for tweets most associated with each topic!

@@ -66,12 +66,7 @@ library(knitr)
 Check out this website (http://politicaldatascience.blogspot.com/2015/12/rtutorial-using-r-to-harvest-twitter.html)
 
 ```{r echo=FALSE}
-consumer_key <- "61QAqhSHk4n1wIGkkSJd4uWYc"
-consumer_secret <- "Wp5fauhEPj66F3IsTJVeAznJrq6ozNBRhrfyIweMjiLhsV4IV0"
-access_token <- "903307271752605696-3YvAs5p7R7y8ASXXLCQWRUnW0veUNFB"
-access_secret <- "PyrBLoT3ScECCfOsP2MlzOIW8MQW11lLsnihXu8r8k24q"
-
-setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
+setup_twitter_oauth(consumer_key = "61QAqhSHk4n1wIGkkSJd4uWYc", consumer_secret = "Wp5fauhEPj66F3IsTJVeAznJrq6ozNBRhrfyIweMjiLhsV4IV0", access_token = "903307271752605696-3YvAs5p7R7y8ASXXLCQWRUnW0veUNFB", access_secret = "PyrBLoT3ScECCfOsP2MlzOIW8MQW11lLsnihXu8r8k24q")
 ```
 ```{r, eval=FALSE}
 guinness <- userTimeline("GuinnessUS", n=2000, since="2014-01-01")
@@ -173,8 +168,35 @@ saveRDS(beerModelFit, "beerModel.rds")
 
 #k=0, converged after 80 iterations, 49 topics 
 saveRDS(beerModelFit, "beerModel49.rds")
-
 ```
+
+We now have two potential models, but still, which one should we used? After running stm() with K=0, we had the algorithim pick out some Ks: 49, 51, 56, 59. So we will set K around that and run the searchK() function. It took forever, but I saved the output as an R object, and we can plot the results and see. 
+```{r, eval=F}
+searchk.test <- read_rds("searchk.rds")
+
+plot(searchk.test)
+
+searchk.df <- as.data.frame(searchk.test$results)
+
+#seems like 44, 49, 51 are all reasonable K, since we already have 49, lets run the model at k = 44 and compare
+
+beermodel44 <- stm(document = beerdocs,
+                    vocab = beervocab,
+                    K =  44,
+                    prevalence =~ screenName + weekday,
+                    data = beermeta,
+                    init.type = "Spectral",
+                    seed = 123456
+                    ) 
+
+saveRDS(beermodel44, "beermodel44.rds")
+
+thoughts44 <- findThoughts(beermodel44, beermeta$text, topics = c(25,38), n=3)
+plot(thoughts44)
+```
+There doesn't seem to be much of a difference between 44 topics and 49 topics. So we will stick with 49 topics, especially given the jump in residuals onwards after 49. 
+
+
 
 The STM package leverages metadata as part of the topic modelling process. This is denoted by the prevalence argument. It takes in the metadata: sceenName (the beer company) & weekday, and provides us with 30 topics for which the tweets can fall under. The two metadata is describing how the prevalence of the topics is influenced by the two covariates -- who is tweeting, and on what day are they tweeting. 
 
@@ -268,12 +290,24 @@ favorite.topic.freq <- beer.final %>%
   arrange(desc(favorites))
 
 favorite.topic.freq
+
+#just for fun let's see which company has the most favorites, along with how many tweets they have 
+most.fav.company <- beer.final %>% 
+  select(screenName, favoriteCount) %>%
+  group_by(screenName) %>%
+  summarise(favorited = sum(favoriteCount),
+            ntweets = n(),
+            ratio = favorited/ntweets) %>%
+  arrange(desc(favorited))
+
+most.fav.company 
 ```
 Sweet, now we know which topic is tweeted the most by our beer companies, and also which topics get favorited the most! With this, we now have some topics of interest that is worth further investigation: 
-*Guinness: Topic 39
-*BlueMoon: Topic 41
-*DosEquis: Topic 13
-*Budlight: Topic 26
-*Tsingtao: Topic 43 
+
+1. Guinness: Topic 39
+2. BlueMoon: Topic 41
+3. DosEquis: Topic 13
+4. Budlight: Topic 26
+5. Tsingtao: Topic 43 
 
 There are multiple ways we can do on about investigating out topics, but since we already have the theta scores for each tweet, we can filter for tweets most associated with each topic! 
