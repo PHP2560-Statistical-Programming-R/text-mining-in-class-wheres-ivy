@@ -77,6 +77,9 @@ setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
 guinness <- userTimeline("GuinnessUS", n=2000, since="2014-01-01")
 
 guinness.td <- twListToDF(guinness)
+
+guinness.td$reformattedtext <- iconv(guinness.td$text, from="UTF-8", to="ASCII", "byte")
+
 write_csv(guinness.td, "guinness.csv")
 ```
 
@@ -121,7 +124,7 @@ clean.beer <- read_csv("AllCleanedTweets.csv")
 #just want specific data as meta data --> data that would serve as a covariate: beer company and date 
 
 beer.data <- clean.beer %>% 
-  select(X1, text, screenName, weekday)
+  select(X1, text, screenName, weekday, favoriteCount)
 
 #process the data via STM textProcessor 
 proc.beer <- textProcessor(documents = beer.data$text, metadata = beer.data)
@@ -190,7 +193,7 @@ Thus we need to identify the topics with the highest frequenct among our tweets,
 
 BeerModel49 <- readRDS("beerModel49.rds")
 
-thoughts <- findThoughts(BeerModel49, out$meta$text, topics=c(29), n=3)
+thoughts <- findThoughts(BeerModel49, beermeta$text, topics=c(48), n=3)
 
 plot(thoughts)
 ```
@@ -198,7 +201,79 @@ plot(thoughts)
 I want to check to see if the documents pulled up from findThoughts matches the one in the metadata. We can do this with plotQuotes(thoughts), it will let us know which document it is using and then we can index to see if they match. 
 
 ```{r}
-plotQuote(thoughts) #using 3876, 2509, 6260 
+#we can see which document plot(thoughts) is using with -plotQuote(thoughts)-
+beermeta$text[c(3870,2293,3871)] #looks good! 
 
-out$meta$text[c(3876,2509,6260)] #looks good! 
 ```
+
+From here, let's add the most popular topic corresponding to each tweet as a new variable for our dataframe. We can simply use the "$theta" from the stm model to see all the values. If we take a look at theta from the model, we see that every document has a corresponding theta value for EACH topic. 
+
+```{r}
+#what does it look like? 
+theta <- as.data.frame(BeerModel49$theta)
+head(theta, n=2)
+
+#add in function that take the column name with the highest value, and add it to a variable we call "topic" and then create a varaible that gives us the actual value, and then we need to create a variable "X1" so we can do a join 
+
+theta$topic <- apply(theta[,1:49], 1, which.max)
+theta$topic.value <- apply(theta[, 1:49], 1, max)
+theta$X1 <- 1:nrow(theta)
+
+#take only variables of interest 
+theta.clean <- theta %>% 
+  select(X1, topic, topic.value)
+
+#prepDoc deleted lines in beermeta, therefore X1 is not numbered correctly, have to delete and renumber, the rows 
+
+beermeta <- within(beermeta, rm(X1))
+
+beermeta$X1 <- 1:nrow(beermeta)
+
+beermeta[8,] #X1 = 8, while row num = 9, but it is displayed correctly, X1 matches order correctly
+
+#now that our beermeta's X1 is labeled correctly and corresponds with the actual number of the document, we can join the two datasets using X1 
+
+beer.final <- beermeta %>%
+  left_join(theta.clean, by = "X1")
+
+```
+
+Awesome, now we have a data frame with all our variables of interest, based on the documents that STM used for the text processing, notice that we started with 8459, and now we have 8285. So what can we do now exactly? 
+
+We know *who* tweeted *what* and *when* (on what day). From this we can do the following: 
+*find the most tweeted topic by beer company 
+*find the most favorited topic 
+
+```{r, echo=FALSE}
+#let's figure out what the most popular topic is, and who tweets about them the most 
+company.topic.freq <- beer.final %>% 
+  select(screenName, topic) %>%
+  group_by(screenName) %>% 
+  count(topic) %>%
+  ungroup() %>%
+  arrange(desc(n)) 
+
+company.topic.freq
+
+#we can check/visualize this by creating a bar chart for each topic 
+counts <- table(beer.final$topic)
+barplot(counts, main = "Frequency of Topics", xlab = "Topic Number")
+
+#now let's see which topic is favorited the most, and which company is it coming from 
+favorite.topic.freq <- beer.final %>% 
+  select(screenName, topic, favoriteCount) %>%
+  group_by(screenName, topic) %>% 
+  summarise(favorites = sum(favoriteCount)) %>% 
+  ungroup() %>%
+  arrange(desc(favorites))
+
+favorite.topic.freq
+```
+Sweet, now we know which topic is tweeted the most by our beer companies, and also which topics get favorited the most! With this, we now have some topics of interest that is worth further investigation: 
+*Guinness: Topic 39
+*BlueMoon: Topic 41
+*DosEquis: Topic 13
+*Budlight: Topic 26
+*Tsingtao: Topic 43 
+
+There are multiple ways we can do on about investigating out topics, but since we already have the theta scores for each tweet, we can filter for tweets most associated with each topic! 
