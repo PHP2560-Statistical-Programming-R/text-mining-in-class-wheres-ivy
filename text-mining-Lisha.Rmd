@@ -51,20 +51,27 @@ library(tidytext)
 library(lubridate)
 library(ggplot2)
 
+
 #Grab tweets of Tsingtao from Twitter 
 consumer_key="uxezKTgNY6J9vDV2IN1QgKaHd"
 consumer_secret="ezdvqK1w1vgA3PnyioIU56bW73DZmo9AWFfptFNsn7bz0Cs44A"
 access_token="3759994332-tdFWvTsGAedAgvvw6vCiPkEFbnWedxCnpR83FUe"
 access_secret="LXPvROXMJaN2e9WOcgqLTVTv0XahEM9ksE75QVm0sBxBZ"
 setup_twitter_oauth(consumer_key,consumer_secret,access_token,access_secret)
-#Tsingtao<-userTimeline("Tsingtao",n=1000)
+Tsingtao<-userTimeline("@Tsingtao",since='2014-10-18',includeRts = F, excludeReplies = F, n= 3200)
+df<-twListToDF(Tsingtao)
+
+df$text <- iconv(df$text, from="UTF-8", to="ASCII", "byte")
+
+write.csv(df,"Tsingtao1.csv")
+
+
 ```
 
 ```{r}
 #Data Cleaning
 
 #Reformat data
-#df<-do.call("rbind",lapply(Tsingtao,as.data.frame))
 All_beer<-read.csv("AllBeerTweets.csv")
 
 #Remove urls, @, and # from text
@@ -115,11 +122,11 @@ top_tweets <-clean_tweets %>%
 
 #ggplot
 dir.create("graph/", showWarnings = FALSE)
-png('graph/scatterplot.png')
+png('graph/barplot.png')
 
-ggplot(top_tweets,aes(x=word, y=n,group=1)) +
-  geom_point() + geom_line(color="black")+xlab("words") +ylab("Frequency") + 
-  ggtitle("Commmon words among tweets with highest number of retweets in each month") + theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5))
-
+ggplot(top_tweets) +
+  geom_bar(mapping = aes(x=reorder(word,n),y=n),stat="identity")+xlab("words") +ylab("Frequency") + coord_flip()+
+  ggtitle("Common words among tweets with highest number of retweets monthly") + theme(axis.text.x = element_text(angle = 0, hjust = 0.5, vjust = 0.5))
+dev.off()
 ```
 
