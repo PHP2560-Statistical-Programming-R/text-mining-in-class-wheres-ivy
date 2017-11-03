@@ -3,7 +3,7 @@ library(rebus)
 library(stringi)
 library(dplyr)
 library(tidytext)
-library(lubridate)
+
 
 #Reformat data
 All_beer<-read.csv("AllBeerTweets.csv")
