@@ -6,7 +6,7 @@ library(tidytext)
 
 
 #Reformat data
-All_beer<-read.csv("AllBeerTweets.csv")
+All_beer<-read.csv("~/text-mining-in-class-wheres-ivy/AllBeerTweets.csv")
 
 #Remove urls, @, and # from text
 url_pattern <-"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+"
