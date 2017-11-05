@@ -1,0 +1,1443 @@
+"","description","r.encoding","unicode"
+"1","grinning face","<ed><a0><bd><ed><b8><80>",U+1F600
+"2","grinning face with smiling eyes","<ed><a0><bd><ed><b8><81>",U+1F601
+"3","face with tears of joy","<ed><a0><bd><ed><b8><82>",U+1F602
+"4","rolling on the floor laughing","<ed><a0><be><ed><b4><a3>",U+1F923
+"5","smiling face with open mouth","<ed><a0><bd><ed><b8><83>",U+1F603
+"6","smiling face with open mouth &amp- smiling eyes","<ed><a0><bd><ed><b8><84>",U+1F604
+"7","smiling face with open mouth &amp- cold sweat","<ed><a0><bd><ed><b8><85>",U+1F605
+"8","smiling face with open mouth &amp- closed eyes","<ed><a0><bd><ed><b8><86>",U+1F606
+"9","winking face","<ed><a0><bd><ed><b8><89>",U+1F609
+"10","smiling face with smiling eyes","<ed><a0><bd><ed><b8><8a>",U+1F60A
+"11","face savouring delicious food","<ed><a0><bd><ed><b8><8b>",U+1F60B
+"12","smiling face with sunglasses","<ed><a0><bd><ed><b8><8e>",U+1F60E
+"13","smiling face with heart-eyes","<ed><a0><bd><ed><b8><8d>",U+1F60D
+"14","face blowing a kiss","<ed><a0><bd><ed><b8><98>",U+1F618
+"15","kissing face","<ed><a0><bd><ed><b8><97>",U+1F617
+"16","kissing face with smiling eyes","<ed><a0><bd><ed><b8><99>",U+1F619
+"17","kissing face with closed eyes","<ed><a0><bd><ed><b8><9a>",U+1F61A
+"18","smiling face","<e2><98><ba>",U+263A
+"19","slightly smiling face","<ed><a0><bd><ed><b9><82>",U+1F642
+"20","hugging face","<ed><a0><be><ed><b4><97>",U+1F917
+"21","thinking face","<ed><a0><be><ed><b4><94>",U+1F914
+"22","neutral face","<ed><a0><bd><ed><b8><90>",U+1F610
+"23","expressionless face","<ed><a0><bd><ed><b8><91>",U+1F611
+"24","face without mouth","<ed><a0><bd><ed><b8><b6>",U+1F636
+"25","face with rolling eyes","<ed><a0><bd><ed><b9><84>",U+1F644
+"26","smirking face","<ed><a0><bd><ed><b8><8f>",U+1F60F
+"27","persevering face","<ed><a0><bd><ed><b8><a3>",U+1F623
+"28","disappointed but relieved face","<ed><a0><bd><ed><b8><a5>",U+1F625
+"29","face with open mouth","<ed><a0><bd><ed><b8><ae>",U+1F62E
+"30","zipper-mouth face","<ed><a0><be><ed><b4><90>",U+1F910
+"31","hushed face","<ed><a0><bd><ed><b8><af>",U+1F62F
+"32","sleepy face","<ed><a0><bd><ed><b8><aa>",U+1F62A
+"33","tired face","<ed><a0><bd><ed><b8><ab>",U+1F62B
+"34","sleeping face","<ed><a0><bd><ed><b8><b4>",U+1F634
+"35","relieved face","<ed><a0><bd><ed><b8><8c>",U+1F60C
+"36","nerd face","<ed><a0><be><ed><b4><93>",U+1F913
+"37","face with stuck-out tongue","<ed><a0><bd><ed><b8><9b>",U+1F61B
+"38","face with stuck-out tongue &amp- winking eye","<ed><a0><bd><ed><b8><9c>",U+1F61C
+"39","face with stuck-out tongue &amp- closed eyes","<ed><a0><bd><ed><b8><9d>",U+1F61D
+"40","drooling face","<ed><a0><be><ed><b4><a4>",U+1F924
+"41","unamused face","<ed><a0><bd><ed><b8><92>",U+1F612
+"42","face with cold sweat","<ed><a0><bd><ed><b8><93>",U+1F613
+"43","pensive face","<ed><a0><bd><ed><b8><94>",U+1F614
+"44","confused face","<ed><a0><bd><ed><b8><95>",U+1F615
+"45","upside-down face","<ed><a0><bd><ed><b9><83>",U+1F643
+"46","money-mouth face","<ed><a0><be><ed><b4><91>",U+1F911
+"47","astonished face","<ed><a0><bd><ed><b8><b2>",U+1F632
+"48","frowning face","<e2><98><b9>",U+2639
+"49","slightly frowning face","<ed><a0><bd><ed><b9><81>",U+1F641
+"50","confounded face","<ed><a0><bd><ed><b8><96>",U+1F616
+"51","disappointed face","<ed><a0><bd><ed><b8><9e>",U+1F61E
+"52","worried face","<ed><a0><bd><ed><b8><9f>",U+1F61F
+"53","face with steam from nose","<ed><a0><bd><ed><b8><a4>",U+1F624
+"54","crying face","<ed><a0><bd><ed><b8><a2>",U+1F622
+"55","loudly crying face","<ed><a0><bd><ed><b8><ad>",U+1F62D
+"56","frowning face with open mouth","<ed><a0><bd><ed><b8><a6>",U+1F626
+"57","anguished face","<ed><a0><bd><ed><b8><a7>",U+1F627
+"58","fearful face","<ed><a0><bd><ed><b8><a8>",U+1F628
+"59","weary face","<ed><a0><bd><ed><b8><a9>",U+1F629
+"60","grimacing face","<ed><a0><bd><ed><b8><ac>",U+1F62C
+"61","face with open mouth &amp- cold sweat","<ed><a0><bd><ed><b8><b0>",U+1F630
+"62","face screaming in fear","<ed><a0><bd><ed><b8><b1>",U+1F631
+"63","flushed face","<ed><a0><bd><ed><b8><b3>",U+1F633
+"64","dizzy face","<ed><a0><bd><ed><b8><b5>",U+1F635
+"65","pouting face","<ed><a0><bd><ed><b8><a1>",U+1F621
+"66","angry face","<ed><a0><bd><ed><b8><a0>",U+1F620
+"67","smiling face with halo","<ed><a0><bd><ed><b8><87>",U+1F607
+"68","cowboy hat face","<ed><a0><be><ed><b4><a0>",U+1F920
+"69","clown face","<ed><a0><be><ed><b4><a1>",U+1F921
+"70","lying face","<ed><a0><be><ed><b4><a5>",U+1F925
+"71","face with medical mask","<ed><a0><bd><ed><b8><b7>",U+1F637
+"72","face with thermometer","<ed><a0><be><ed><b4><92>",U+1F912
+"73","face with head-bandage","<ed><a0><be><ed><b4><95>",U+1F915
+"74","nauseated face","<ed><a0><be><ed><b4><a2>",U+1F922
+"75","sneezing face","<ed><a0><be><ed><b4><a7>",U+1F927
+"76","smiling face with horns","<ed><a0><bd><ed><b8><88>",U+1F608
+"77","angry face with horns","<ed><a0><bd><ed><b1><bf>",U+1F47F
+"78","ogre","<ed><a0><bd><ed><b1><b9>",U+1F479
+"79","goblin","<ed><a0><bd><ed><b1><ba>",U+1F47A
+"80","skull","<ed><a0><bd><ed><b2><80>",U+1F480
+"81","skull and crossbones","<e2><98><a0>",U+2620
+"82","ghost","<ed><a0><bd><ed><b1><bb>",U+1F47B
+"83","alien","<ed><a0><bd><ed><b1><bd>",U+1F47D
+"84","alien monster","<ed><a0><bd><ed><b1><be>",U+1F47E
+"85","robot face","<ed><a0><be><ed><b4><96>",U+1F916
+"86","pile of poo","<ed><a0><bd><ed><b2><a9>",U+1F4A9
+"87","smiling cat face with open mouth","<ed><a0><bd><ed><b8><ba>",U+1F63A
+"88","grinning cat face with smiling eyes","<ed><a0><bd><ed><b8><b8>",U+1F638
+"89","cat face with tears of joy","<ed><a0><bd><ed><b8><b9>",U+1F639
+"90","smiling cat face with heart-eyes","<ed><a0><bd><ed><b8><bb>",U+1F63B
+"91","cat face with wry smile","<ed><a0><bd><ed><b8><bc>",U+1F63C
+"92","kissing cat face with closed eyes","<ed><a0><bd><ed><b8><bd>",U+1F63D
+"93","weary cat face","<ed><a0><bd><ed><b9><80>",U+1F640
+"94","crying cat face","<ed><a0><bd><ed><b8><bf>",U+1F63F
+"95","pouting cat face","<ed><a0><bd><ed><b8><be>",U+1F63E
+"96","see-no-evil monkey","<ed><a0><bd><ed><b9><88>",U+1F648
+"97","hear-no-evil monkey","<ed><a0><bd><ed><b9><89>",U+1F649
+"98","speak-no-evil monkey","<ed><a0><bd><ed><b9><8a>",U+1F64A
+"99","boy","<ed><a0><bd><ed><b1><a6>",U+1F466
+"100","girl","<ed><a0><bd><ed><b1><a7>",U+1F467
+"101","man","<ed><a0><bd><ed><b1><a8>",U+1F468
+"102","woman","<ed><a0><bd><ed><b1><a9>",U+1F469
+"103","old man","<ed><a0><bd><ed><b1><b4>",U+1F474
+"104","old woman","<ed><a0><bd><ed><b1><b5>",U+1F475
+"105","baby","<ed><a0><bd><ed><b1><b6>",U+1F476
+"106","baby angel","<ed><a0><bd><ed><b1><bc>",U+1F47C
+"107","man health worker","<ed><a0><bd><ed><b1><a8><e2><80><8d><e2><9a><95><ef><b8><8f>",<NA>
+"108","woman health worker","<ed><a0><bd><ed><b1><a9><e2><80><8d><e2><9a><95><ef><b8><8f>",<NA>
+"109","man student","<ed><a0><bd><ed><b1><a8><e2><80><8d><ed><a0><bc><ed><be><93>",<NA>
+"110","woman student","<ed><a0><bd><ed><b1><a9><e2><80><8d><ed><a0><bc><ed><be><93>",<NA>
+"111","man teacher","<ed><a0><bd><ed><b1><a8><e2><80><8d><ed><a0><bc><ed><bf><ab>",<NA>
+"112","woman teacher","<ed><a0><bd><ed><b1><a9><e2><80><8d><ed><a0><bc><ed><bf><ab>",<NA>
+"113","man judge","<ed><a0><bd><ed><b1><a8><e2><80><8d><e2><9a><96><ef><b8><8f>",<NA>
+"114","woman judge","<ed><a0><bd><ed><b1><a9><e2><80><8d><e2><9a><96><ef><b8><8f>",<NA>
+"115","man farmer","<ed><a0><bd><ed><b1><a8><e2><80><8d><ed><a0><bc><ed><bc><be>",<NA>
+"116","woman farmer","<ed><a0><bd><ed><b1><a9><e2><80><8d><ed><a0><bc><ed><bc><be>",<NA>
+"117","man cook","<ed><a0><bd><ed><b1><a8><e2><80><8d><ed><a0><bc><ed><bd><b3>",<NA>
+"118","woman cook","<ed><a0><bd><ed><b1><a9><e2><80><8d><ed><a0><bc><ed><bd><b3>",<NA>
+"119","man mechanic","<ed><a0><bd><ed><b1><a8><e2><80><8d><ed><a0><bd><ed><b4><a7>",<NA>
+"120","woman mechanic","<ed><a0><bd><ed><b1><a9><e2><80><8d><ed><a0><bd><ed><b4><a7>",<NA>
+"121","man factory worker","<ed><a0><bd><ed><b1><a8><e2><80><8d><ed><a0><bc><ed><bf><ad>",<NA>
+"122","woman factory worker","<ed><a0><bd><ed><b1><a9><e2><80><8d><ed><a0><bc><ed><bf><ad>",<NA>
+"123","man office worker","<ed><a0><bd><ed><b1><a8><e2><80><8d><ed><a0><bd><ed><b2><bc>",<NA>
+"124","woman office worker","<ed><a0><bd><ed><b1><a9><e2><80><8d><ed><a0><bd><ed><b2><bc>",<NA>
+"125","man scientist","<ed><a0><bd><ed><b1><a8><e2><80><8d><ed><a0><bd><ed><b4><ac>",<NA>
+"126","woman scientist","<ed><a0><bd><ed><b1><a9><e2><80><8d><ed><a0><bd><ed><b4><ac>",<NA>
+"127","man technologist","<ed><a0><bd><ed><b1><a8><e2><80><8d><ed><a0><bd><ed><b2><bb>",<NA>
+"128","woman technologist","<ed><a0><bd><ed><b1><a9><e2><80><8d><ed><a0><bd><ed><b2><bb>",<NA>
+"129","man singer","<ed><a0><bd><ed><b1><a8><e2><80><8d><ed><a0><bc><ed><be><a4>",<NA>
+"130","woman singer","<ed><a0><bd><ed><b1><a9><e2><80><8d><ed><a0><bc><ed><be><a4>",<NA>
+"131","man artist","<ed><a0><bd><ed><b1><a8><e2><80><8d><ed><a0><bc><ed><be><a8>",<NA>
+"132","woman artist","<ed><a0><bd><ed><b1><a9><e2><80><8d><ed><a0><bc><ed><be><a8>",<NA>
+"133","man pilot","<ed><a0><bd><ed><b1><a8><e2><80><8d><e2><9c><88><ef><b8><8f>",<NA>
+"134","woman pilot","<ed><a0><bd><ed><b1><a9><e2><80><8d><e2><9c><88><ef><b8><8f>",<NA>
+"135","man astronaut","<ed><a0><bd><ed><b1><a8><e2><80><8d><ed><a0><bd><ed><ba><80>",<NA>
+"136","woman astronaut","<ed><a0><bd><ed><b1><a9><e2><80><8d><ed><a0><bd><ed><ba><80>",<NA>
+"137","man firefighter","<ed><a0><bd><ed><b1><a8><e2><80><8d><ed><a0><bd><ed><ba><92>",<NA>
+"138","woman firefighter","<ed><a0><bd><ed><b1><a9><e2><80><8d><ed><a0><bd><ed><ba><92>",<NA>
+"139","police officer","<ed><a0><bd><ed><b1><ae>",U+1F46E
+"140","man police officer","<ed><a0><bd><ed><b1><ae><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"141","woman police officer","<ed><a0><bd><ed><b1><ae><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"142","detective","<ed><a0><bd><ed><b5><b5>",U+1F575
+"143","man detective","<ed><a0><bd><ed><b5><b5><ef><b8><8f><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"144","woman detective","<ed><a0><bd><ed><b5><b5><ef><b8><8f><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"145","guard","<ed><a0><bd><ed><b2><82>",U+1F482
+"146","man guard","<ed><a0><bd><ed><b2><82><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"147","woman guard","<ed><a0><bd><ed><b2><82><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"148","construction worker","<ed><a0><bd><ed><b1><b7>",U+1F477
+"149","man construction worker","<ed><a0><bd><ed><b1><b7><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"150","woman construction worker","<ed><a0><bd><ed><b1><b7><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"151","person wearing turban","<ed><a0><bd><ed><b1><b3>",U+1F473
+"152","man wearing turban","<ed><a0><bd><ed><b1><b3><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"153","woman wearing turban","<ed><a0><bd><ed><b1><b3><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"154","blond-haired person","<ed><a0><bd><ed><b1><b1>",U+1F471
+"155","blond-haired man","<ed><a0><bd><ed><b1><b1><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"156","blond-haired woman","<ed><a0><bd><ed><b1><b1><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"157","santa claus","<ed><a0><bc><ed><be><85>",U+1F385
+"158","mrs. claus","<ed><a0><be><ed><b4><b6>",U+1F936
+"159","princess","<ed><a0><bd><ed><b1><b8>",U+1F478
+"160","prince","<ed><a0><be><ed><b4><b4>",U+1F934
+"161","bride with veil","<ed><a0><bd><ed><b1><b0>",U+1F470
+"162","man in tuxedo","<ed><a0><be><ed><b4><b5>",U+1F935
+"163","pregnant woman","<ed><a0><be><ed><b4><b0>",U+1F930
+"164","man with chinese cap","<ed><a0><bd><ed><b1><b2>",U+1F472
+"165","person frowning","<ed><a0><bd><ed><b9><8d>",U+1F64D
+"166","man frowning","<ed><a0><bd><ed><b9><8d><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"167","woman frowning","<ed><a0><bd><ed><b9><8d><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"168","person pouting","<ed><a0><bd><ed><b9><8e>",U+1F64E
+"169","man pouting","<ed><a0><bd><ed><b9><8e><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"170","woman pouting","<ed><a0><bd><ed><b9><8e><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"171","person gesturing no","<ed><a0><bd><ed><b9><85>",U+1F645
+"172","man gesturing no","<ed><a0><bd><ed><b9><85><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"173","woman gesturing no","<ed><a0><bd><ed><b9><85><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"174","person gesturing ok","<ed><a0><bd><ed><b9><86>",U+1F646
+"175","man gesturing ok","<ed><a0><bd><ed><b9><86><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"176","woman gesturing ok","<ed><a0><bd><ed><b9><86><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"177","person tipping hand","<ed><a0><bd><ed><b2><81>",U+1F481
+"178","man tipping hand","<ed><a0><bd><ed><b2><81><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"179","woman tipping hand","<ed><a0><bd><ed><b2><81><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"180","person raising hand","<ed><a0><bd><ed><b9><8b>",U+1F64B
+"181","man raising hand","<ed><a0><bd><ed><b9><8b><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"182","woman raising hand","<ed><a0><bd><ed><b9><8b><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"183","person bowing","<ed><a0><bd><ed><b9><87>",U+1F647
+"184","man bowing","<ed><a0><bd><ed><b9><87><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"185","woman bowing","<ed><a0><bd><ed><b9><87><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"186","person facepalming","<ed><a0><be><ed><b4><a6>",U+1F926
+"187","man facepalming","<ed><a0><be><ed><b4><a6><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"188","woman facepalming","<ed><a0><be><ed><b4><a6><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"189","person shrugging","<ed><a0><be><ed><b4><b7>",U+1F937
+"190","man shrugging","<ed><a0><be><ed><b4><b7><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"191","woman shrugging","<ed><a0><be><ed><b4><b7><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"192","person getting massage","<ed><a0><bd><ed><b2><86>",U+1F486
+"193","man getting massage","<ed><a0><bd><ed><b2><86><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"194","woman getting massage","<ed><a0><bd><ed><b2><86><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"195","person getting haircut","<ed><a0><bd><ed><b2><87>",U+1F487
+"196","man getting haircut","<ed><a0><bd><ed><b2><87><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"197","woman getting haircut","<ed><a0><bd><ed><b2><87><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"198","person walking","<ed><a0><bd><ed><ba><b6>",U+1F6B6
+"199","man walking","<ed><a0><bd><ed><ba><b6><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"200","woman walking","<ed><a0><bd><ed><ba><b6><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"201","person running","<ed><a0><bc><ed><bf><83>",U+1F3C3
+"202","man running","<ed><a0><bc><ed><bf><83><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"203","woman running","<ed><a0><bc><ed><bf><83><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"204","woman dancing","<ed><a0><bd><ed><b2><83>",U+1F483
+"205","man dancing","<ed><a0><bd><ed><b5><ba>",U+1F57A
+"206","people with bunny ears partying","<ed><a0><bd><ed><b1><af>",U+1F46F
+"207","men with bunny ears partying","<ed><a0><bd><ed><b1><af><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"208","women with bunny ears partying","<ed><a0><bd><ed><b1><af><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"209","man in business suit levitating","<ed><a0><bd><ed><b5><b4>",U+1F574
+"210","speaking head","<ed><a0><bd><ed><b7><a3>",U+1F5E3
+"211","bust in silhouette","<ed><a0><bd><ed><b1><a4>",U+1F464
+"212","busts in silhouette","<ed><a0><bd><ed><b1><a5>",U+1F465
+"213","person fencing","<ed><a0><be><ed><b4><ba>",U+1F93A
+"214","horse racing","<ed><a0><bc><ed><bf><87>",U+1F3C7
+"215","skier","<e2><9b><b7>",U+26F7
+"216","snowboarder","<ed><a0><bc><ed><bf><82>",U+1F3C2
+"217","person golfing","<ed><a0><bc><ed><bf><8c>",U+1F3CC
+"218","man golfing","<ed><a0><bc><ed><bf><8c><ef><b8><8f><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"219","woman golfing","<ed><a0><bc><ed><bf><8c><ef><b8><8f><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"220","person surfing","<ed><a0><bc><ed><bf><84>",U+1F3C4
+"221","man surfing","<ed><a0><bc><ed><bf><84><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"222","woman surfing","<ed><a0><bc><ed><bf><84><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"223","person rowing boat","<ed><a0><bd><ed><ba><a3>",U+1F6A3
+"224","man rowing boat","<ed><a0><bd><ed><ba><a3><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"225","woman rowing boat","<ed><a0><bd><ed><ba><a3><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"226","person swimming","<ed><a0><bc><ed><bf><8a>",U+1F3CA
+"227","man swimming","<ed><a0><bc><ed><bf><8a><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"228","woman swimming","<ed><a0><bc><ed><bf><8a><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"229","person bouncing ball","<e2><9b><b9>",U+26F9
+"230","man bouncing ball","<e2><9b><b9><ef><b8><8f><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"231","woman bouncing ball","<e2><9b><b9><ef><b8><8f><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"232","person lifting weights","<ed><a0><bc><ed><bf><8b>",U+1F3CB
+"233","man lifting weights","<ed><a0><bc><ed><bf><8b><ef><b8><8f><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"234","woman lifting weights","<ed><a0><bc><ed><bf><8b><ef><b8><8f><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"235","person biking","<ed><a0><bd><ed><ba><b4>",U+1F6B4
+"236","man biking","<ed><a0><bd><ed><ba><b4><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"237","woman biking","<ed><a0><bd><ed><ba><b4><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"238","person mountain biking","<ed><a0><bd><ed><ba><b5>",U+1F6B5
+"239","man mountain biking","<ed><a0><bd><ed><ba><b5><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"240","woman mountain biking","<ed><a0><bd><ed><ba><b5><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"241","racing car","<ed><a0><bc><ed><bf><8e>",U+1F3CE
+"242","motorcycle","<ed><a0><bc><ed><bf><8d>",U+1F3CD
+"243","person cartwheeling","<ed><a0><be><ed><b4><b8>",U+1F938
+"244","man cartwheeling","<ed><a0><be><ed><b4><b8><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"245","woman cartwheeling","<ed><a0><be><ed><b4><b8><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"246","people wrestling","<ed><a0><be><ed><b4><bc>",U+1F93C
+"247","men wrestling","<ed><a0><be><ed><b4><bc><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"248","women wrestling","<ed><a0><be><ed><b4><bc><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"249","person playing water polo","<ed><a0><be><ed><b4><bd>",U+1F93D
+"250","man playing water polo","<ed><a0><be><ed><b4><bd><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"251","woman playing water polo","<ed><a0><be><ed><b4><bd><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"252","person playing handball","<ed><a0><be><ed><b4><be>",U+1F93E
+"253","man playing handball","<ed><a0><be><ed><b4><be><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"254","woman playing handball","<ed><a0><be><ed><b4><be><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"255","person juggling","<ed><a0><be><ed><b4><b9>",U+1F939
+"256","man juggling","<ed><a0><be><ed><b4><b9><e2><80><8d><e2><99><82><ef><b8><8f>",<NA>
+"257","woman juggling","<ed><a0><be><ed><b4><b9><e2><80><8d><e2><99><80><ef><b8><8f>",<NA>
+"258","man and woman holding hands","<ed><a0><bd><ed><b1><ab>",U+1F46B
+"259","two men holding hands","<ed><a0><bd><ed><b1><ac>",U+1F46C
+"260","two women holding hands","<ed><a0><bd><ed><b1><ad>",U+1F46D
+"261","kiss","<ed><a0><bd><ed><b2><8f>",U+1F48F
+"262","couple with heart","<ed><a0><bd><ed><b2><91>",U+1F491
+"263","family","<ed><a0><bd><ed><b1><aa>",U+1F46A
+"264","flexed biceps","<ed><a0><bd><ed><b2><aa>",U+1F4AA
+"265","selfie","<ed><a0><be><ed><b4><b3>",U+1F933
+"266","backhand index pointing left","<ed><a0><bd><ed><b1><88>",U+1F448
+"267","backhand index pointing right","<ed><a0><bd><ed><b1><89>",U+1F449
+"268","index pointing up","<e2><98><9d>",U+261D
+"269","backhand index pointing up","<ed><a0><bd><ed><b1><86>",U+1F446
+"270","middle finger","<ed><a0><bd><ed><b6><95>",U+1F595
+"271","backhand index pointing down","<ed><a0><bd><ed><b1><87>",U+1F447
+"272","victory hand","<e2><9c><8c>",U+270C
+"273","crossed fingers","<ed><a0><be><ed><b4><9e>",U+1F91E
+"274","vulcan salute","<ed><a0><bd><ed><b6><96>",U+1F596
+"275","sign of the horns","<ed><a0><be><ed><b4><98>",U+1F918
+"276","call me hand","<ed><a0><be><ed><b4><99>",U+1F919
+"277","raised hand with fingers splayed","<ed><a0><bd><ed><b6><90>",U+1F590
+"278","raised hand","<e2><9c><8b>",U+270B
+"279","ok hand","<ed><a0><bd><ed><b1><8c>",U+1F44C
+"280","thumbs up","<ed><a0><bd><ed><b1><8d>",U+1F44D
+"281","thumbs down","<ed><a0><bd><ed><b1><8e>",U+1F44E
+"282","raised fist","<e2><9c><8a>",U+270A
+"283","oncoming fist","<ed><a0><bd><ed><b1><8a>",U+1F44A
+"284","left-facing fist","<ed><a0><be><ed><b4><9b>",U+1F91B
+"285","right-facing fist","<ed><a0><be><ed><b4><9c>",U+1F91C
+"286","raised back of hand","<ed><a0><be><ed><b4><9a>",U+1F91A
+"287","waving hand","<ed><a0><bd><ed><b1><8b>",U+1F44B
+"288","clapping hands","<ed><a0><bd><ed><b1><8f>",U+1F44F
+"289","writing hand","<e2><9c><8d>",U+270D
+"290","open hands","<ed><a0><bd><ed><b1><90>",U+1F450
+"291","raising hands","<ed><a0><bd><ed><b9><8c>",U+1F64C
+"292","folded hands","<ed><a0><bd><ed><b9><8f>",U+1F64F
+"293","handshake","<ed><a0><be><ed><b4><9d>",U+1F91D
+"294","nail polish","<ed><a0><bd><ed><b2><85>",U+1F485
+"295","ear","<ed><a0><bd><ed><b1><82>",U+1F442
+"296","nose","<ed><a0><bd><ed><b1><83>",U+1F443
+"297","footprints","<ed><a0><bd><ed><b1><a3>",U+1F463
+"298","eyes","<ed><a0><bd><ed><b1><80>",U+1F440
+"299","eye","<ed><a0><bd><ed><b1><81>",U+1F441
+"300","eye in speech bubble","<ed><a0><bd><ed><b1><81><ef><b8><8f><e2><80><8d><ed><a0><bd><ed><b7><a8><ef><b8><8f>",<NA>
+"301","tongue","<ed><a0><bd><ed><b1><85>",U+1F445
+"302","mouth","<ed><a0><bd><ed><b1><84>",U+1F444
+"303","kiss mark","<ed><a0><bd><ed><b2><8b>",U+1F48B
+"304","heart with arrow","<ed><a0><bd><ed><b2><98>",U+1F498
+"305","red heart","<e2><9d><a4>",U+2764
+"306","beating heart","<ed><a0><bd><ed><b2><93>",U+1F493
+"307","broken heart","<ed><a0><bd><ed><b2><94>",U+1F494
+"308","two hearts","<ed><a0><bd><ed><b2><95>",U+1F495
+"309","sparkling heart","<ed><a0><bd><ed><b2><96>",U+1F496
+"310","growing heart","<ed><a0><bd><ed><b2><97>",U+1F497
+"311","blue heart","<ed><a0><bd><ed><b2><99>",U+1F499
+"312","green heart","<ed><a0><bd><ed><b2><9a>",U+1F49A
+"313","yellow heart","<ed><a0><bd><ed><b2><9b>",U+1F49B
+"314","purple heart","<ed><a0><bd><ed><b2><9c>",U+1F49C
+"315","black heart","<ed><a0><bd><ed><b6><a4>",U+1F5A4
+"316","heart with ribbon","<ed><a0><bd><ed><b2><9d>",U+1F49D
+"317","revolving hearts","<ed><a0><bd><ed><b2><9e>",U+1F49E
+"318","heart decoration","<ed><a0><bd><ed><b2><9f>",U+1F49F
+"319","heavy heart exclamation","<e2><9d><a3>",U+2763
+"320","love letter","<ed><a0><bd><ed><b2><8c>",U+1F48C
+"321","zzz","<ed><a0><bd><ed><b2><a4>",U+1F4A4
+"322","anger symbol","<ed><a0><bd><ed><b2><a2>",U+1F4A2
+"323","bomb","<ed><a0><bd><ed><b2><a3>",U+1F4A3
+"324","collision","<ed><a0><bd><ed><b2><a5>",U+1F4A5
+"325","sweat droplets","<ed><a0><bd><ed><b2><a6>",U+1F4A6
+"326","dashing away","<ed><a0><bd><ed><b2><a8>",U+1F4A8
+"327","dizzy","<ed><a0><bd><ed><b2><ab>",U+1F4AB
+"328","speech balloon","<ed><a0><bd><ed><b2><ac>",U+1F4AC
+"329","left speech bubble","<ed><a0><bd><ed><b7><a8>",U+1F5E8
+"330","right anger bubble","<ed><a0><bd><ed><b7><af>",U+1F5EF
+"331","thought balloon","<ed><a0><bd><ed><b2><ad>",U+1F4AD
+"332","hole","<ed><a0><bd><ed><b5><b3>",U+1F573
+"333","glasses","<ed><a0><bd><ed><b1><93>",U+1F453
+"334","sunglasses","<ed><a0><bd><ed><b5><b6>",U+1F576
+"335","necktie","<ed><a0><bd><ed><b1><94>",U+1F454
+"336","t-shirt","<ed><a0><bd><ed><b1><95>",U+1F455
+"337","jeans","<ed><a0><bd><ed><b1><96>",U+1F456
+"338","dress","<ed><a0><bd><ed><b1><97>",U+1F457
+"339","kimono","<ed><a0><bd><ed><b1><98>",U+1F458
+"340","bikini","<ed><a0><bd><ed><b1><99>",U+1F459
+"341","woman„¢‚Ç¨‚Ñ¢s clothes","<ed><a0><bd><ed><b1><9a>",U+1F45A
+"342","purse","<ed><a0><bd><ed><b1><9b>",U+1F45B
+"343","handbag","<ed><a0><bd><ed><b1><9c>",U+1F45C
+"344","clutch bag","<ed><a0><bd><ed><b1><9d>",U+1F45D
+"345","shopping bags","<ed><a0><bd><ed><bb><8d>",U+1F6CD
+"346","school backpack","<ed><a0><bc><ed><be><92>",U+1F392
+"347","man„¢‚Ç¨‚Ñ¢s shoe","<ed><a0><bd><ed><b1><9e>",U+1F45E
+"348","running shoe","<ed><a0><bd><ed><b1><9f>",U+1F45F
+"349","high-heeled shoe","<ed><a0><bd><ed><b1><a0>",U+1F460
+"350","woman„¢‚Ç¨‚Ñ¢s sandal","<ed><a0><bd><ed><b1><a1>",U+1F461
+"351","woman„¢‚Ç¨‚Ñ¢s boot","<ed><a0><bd><ed><b1><a2>",U+1F462
+"352","crown","<ed><a0><bd><ed><b1><91>",U+1F451
+"353","woman„¢‚Ç¨‚Ñ¢s hat","<ed><a0><bd><ed><b1><92>",U+1F452
+"354","top hat","<ed><a0><bc><ed><be><a9>",U+1F3A9
+"355","graduation cap","<ed><a0><bc><ed><be><93>",U+1F393
+"356","rescue worker„¢‚Ç¨‚Ñ¢s helmet","<e2><9b><91>",U+26D1
+"357","prayer beads","<ed><a0><bd><ed><b3><bf>",U+1F4FF
+"358","lipstick","<ed><a0><bd><ed><b2><84>",U+1F484
+"359","ring","<ed><a0><bd><ed><b2><8d>",U+1F48D
+"360","gem stone","<ed><a0><bd><ed><b2><8e>",U+1F48E
+"361","monkey face","<ed><a0><bd><ed><b0><b5>",U+1F435
+"362","monkey","<ed><a0><bd><ed><b0><92>",U+1F412
+"363","gorilla","<ed><a0><be><ed><b6><8d>",U+1F98D
+"364","dog face","<ed><a0><bd><ed><b0><b6>",U+1F436
+"365","dog","<ed><a0><bd><ed><b0><95>",U+1F415
+"366","poodle","<ed><a0><bd><ed><b0><a9>",U+1F429
+"367","wolf face","<ed><a0><bd><ed><b0><ba>",U+1F43A
+"368","fox face","<ed><a0><be><ed><b6><8a>",U+1F98A
+"369","cat face","<ed><a0><bd><ed><b0><b1>",U+1F431
+"370","cat","<ed><a0><bd><ed><b0><88>",U+1F408
+"371","lion face","<ed><a0><be><ed><b6><81>",U+1F981
+"372","tiger face","<ed><a0><bd><ed><b0><af>",U+1F42F
+"373","tiger","<ed><a0><bd><ed><b0><85>",U+1F405
+"374","leopard","<ed><a0><bd><ed><b0><86>",U+1F406
+"375","horse face","<ed><a0><bd><ed><b0><b4>",U+1F434
+"376","horse","<ed><a0><bd><ed><b0><8e>",U+1F40E
+"377","deer","<ed><a0><be><ed><b6><8c>",U+1F98C
+"378","unicorn face","<ed><a0><be><ed><b6><84>",U+1F984
+"379","cow face","<ed><a0><bd><ed><b0><ae>",U+1F42E
+"380","ox","<ed><a0><bd><ed><b0><82>",U+1F402
+"381","water buffalo","<ed><a0><bd><ed><b0><83>",U+1F403
+"382","cow","<ed><a0><bd><ed><b0><84>",U+1F404
+"383","pig face","<ed><a0><bd><ed><b0><b7>",U+1F437
+"384","pig","<ed><a0><bd><ed><b0><96>",U+1F416
+"385","boar","<ed><a0><bd><ed><b0><97>",U+1F417
+"386","pig nose","<ed><a0><bd><ed><b0><bd>",U+1F43D
+"387","ram","<ed><a0><bd><ed><b0><8f>",U+1F40F
+"388","sheep","<ed><a0><bd><ed><b0><91>",U+1F411
+"389","goat","<ed><a0><bd><ed><b0><90>",U+1F410
+"390","camel","<ed><a0><bd><ed><b0><aa>",U+1F42A
+"391","two-hump camel","<ed><a0><bd><ed><b0><ab>",U+1F42B
+"392","elephant","<ed><a0><bd><ed><b0><98>",U+1F418
+"393","rhinoceros","<ed><a0><be><ed><b6><8f>",U+1F98F
+"394","mouse face","<ed><a0><bd><ed><b0><ad>",U+1F42D
+"395","mouse","<ed><a0><bd><ed><b0><81>",U+1F401
+"396","rat","<ed><a0><bd><ed><b0><80>",U+1F400
+"397","hamster face","<ed><a0><bd><ed><b0><b9>",U+1F439
+"398","rabbit face","<ed><a0><bd><ed><b0><b0>",U+1F430
+"399","rabbit","<ed><a0><bd><ed><b0><87>",U+1F407
+"400","chipmunk","<ed><a0><bd><ed><b0><bf>",U+1F43F
+"401","bat","<ed><a0><be><ed><b6><87>",U+1F987
+"402","bear face","<ed><a0><bd><ed><b0><bb>",U+1F43B
+"403","koala","<ed><a0><bd><ed><b0><a8>",U+1F428
+"404","panda face","<ed><a0><bd><ed><b0><bc>",U+1F43C
+"405","paw prints","<ed><a0><bd><ed><b0><be>",U+1F43E
+"406","turkey","<ed><a0><be><ed><b6><83>",U+1F983
+"407","chicken","<ed><a0><bd><ed><b0><94>",U+1F414
+"408","rooster","<ed><a0><bd><ed><b0><93>",U+1F413
+"409","hatching chick","<ed><a0><bd><ed><b0><a3>",U+1F423
+"410","baby chick","<ed><a0><bd><ed><b0><a4>",U+1F424
+"411","front-facing baby chick","<ed><a0><bd><ed><b0><a5>",U+1F425
+"412","bird","<ed><a0><bd><ed><b0><a6>",U+1F426
+"413","penguin","<ed><a0><bd><ed><b0><a7>",U+1F427
+"414","dove","<ed><a0><bd><ed><b5><8a>",U+1F54A
+"415","eagle","<ed><a0><be><ed><b6><85>",U+1F985
+"416","duck","<ed><a0><be><ed><b6><86>",U+1F986
+"417","owl","<ed><a0><be><ed><b6><89>",U+1F989
+"418","frog face","<ed><a0><bd><ed><b0><b8>",U+1F438
+"419","crocodile","<ed><a0><bd><ed><b0><8a>",U+1F40A
+"420","turtle","<ed><a0><bd><ed><b0><a2>",U+1F422
+"421","lizard","<ed><a0><be><ed><b6><8e>",U+1F98E
+"422","snake","<ed><a0><bd><ed><b0><8d>",U+1F40D
+"423","dragon face","<ed><a0><bd><ed><b0><b2>",U+1F432
+"424","dragon","<ed><a0><bd><ed><b0><89>",U+1F409
+"425","spouting whale","<ed><a0><bd><ed><b0><b3>",U+1F433
+"426","whale","<ed><a0><bd><ed><b0><8b>",U+1F40B
+"427","dolphin","<ed><a0><bd><ed><b0><ac>",U+1F42C
+"428","fish","<ed><a0><bd><ed><b0><9f>",U+1F41F
+"429","tropical fish","<ed><a0><bd><ed><b0><a0>",U+1F420
+"430","blowfish","<ed><a0><bd><ed><b0><a1>",U+1F421
+"431","shark","<ed><a0><be><ed><b6><88>",U+1F988
+"432","octopus","<ed><a0><bd><ed><b0><99>",U+1F419
+"433","spiral shell","<ed><a0><bd><ed><b0><9a>",U+1F41A
+"434","crab","<ed><a0><be><ed><b6><80>",U+1F980
+"435","shrimp","<ed><a0><be><ed><b6><90>",U+1F990
+"436","squid","<ed><a0><be><ed><b6><91>",U+1F991
+"437","butterfly","<ed><a0><be><ed><b6><8b>",U+1F98B
+"438","snail","<ed><a0><bd><ed><b0><8c>",U+1F40C
+"439","bug","<ed><a0><bd><ed><b0><9b>",U+1F41B
+"440","ant","<ed><a0><bd><ed><b0><9c>",U+1F41C
+"441","honeybee","<ed><a0><bd><ed><b0><9d>",U+1F41D
+"442","lady beetle","<ed><a0><bd><ed><b0><9e>",U+1F41E
+"443","spider","<ed><a0><bd><ed><b5><b7>",U+1F577
+"444","spider web","<ed><a0><bd><ed><b5><b8>",U+1F578
+"445","scorpion","<ed><a0><be><ed><b6><82>",U+1F982
+"446","bouquet","<ed><a0><bd><ed><b2><90>",U+1F490
+"447","cherry blossom","<ed><a0><bc><ed><bc><b8>",U+1F338
+"448","white flower","<ed><a0><bd><ed><b2><ae>",U+1F4AE
+"449","rosette","<ed><a0><bc><ed><bf><b5>",U+1F3F5
+"450","rose","<ed><a0><bc><ed><bc><b9>",U+1F339
+"451","wilted flower","<ed><a0><be><ed><b5><80>",U+1F940
+"452","hibiscus","<ed><a0><bc><ed><bc><ba>",U+1F33A
+"453","sunflower","<ed><a0><bc><ed><bc><bb>",U+1F33B
+"454","blossom","<ed><a0><bc><ed><bc><bc>",U+1F33C
+"455","tulip","<ed><a0><bc><ed><bc><b7>",U+1F337
+"456","seedling","<ed><a0><bc><ed><bc><b1>",U+1F331
+"457","evergreen tree","<ed><a0><bc><ed><bc><b2>",U+1F332
+"458","deciduous tree","<ed><a0><bc><ed><bc><b3>",U+1F333
+"459","palm tree","<ed><a0><bc><ed><bc><b4>",U+1F334
+"460","cactus","<ed><a0><bc><ed><bc><b5>",U+1F335
+"461","sheaf of rice","<ed><a0><bc><ed><bc><be>",U+1F33E
+"462","herb","<ed><a0><bc><ed><bc><bf>",U+1F33F
+"463","shamrock","<e2><98><98>",U+2618
+"464","four leaf clover","<ed><a0><bc><ed><bd><80>",U+1F340
+"465","maple leaf","<ed><a0><bc><ed><bd><81>",U+1F341
+"466","fallen leaf","<ed><a0><bc><ed><bd><82>",U+1F342
+"467","leaf fluttering in wind","<ed><a0><bc><ed><bd><83>",U+1F343
+"468","grapes","<ed><a0><bc><ed><bd><87>",U+1F347
+"469","melon","<ed><a0><bc><ed><bd><88>",U+1F348
+"470","watermelon","<ed><a0><bc><ed><bd><89>",U+1F349
+"471","tangerine","<ed><a0><bc><ed><bd><8a>",U+1F34A
+"472","lemon","<ed><a0><bc><ed><bd><8b>",U+1F34B
+"473","banana","<ed><a0><bc><ed><bd><8c>",U+1F34C
+"474","pineapple","<ed><a0><bc><ed><bd><8d>",U+1F34D
+"475","red apple","<ed><a0><bc><ed><bd><8e>",U+1F34E
+"476","green apple","<ed><a0><bc><ed><bd><8f>",U+1F34F
+"477","pear","<ed><a0><bc><ed><bd><90>",U+1F350
+"478","peach","<ed><a0><bc><ed><bd><91>",U+1F351
+"479","cherries","<ed><a0><bc><ed><bd><92>",U+1F352
+"480","strawberry","<ed><a0><bc><ed><bd><93>",U+1F353
+"481","kiwi fruit","<ed><a0><be><ed><b5><9d>",U+1F95D
+"482","tomato","<ed><a0><bc><ed><bd><85>",U+1F345
+"483","avocado","<ed><a0><be><ed><b5><91>",U+1F951
+"484","eggplant","<ed><a0><bc><ed><bd><86>",U+1F346
+"485","potato","<ed><a0><be><ed><b5><94>",U+1F954
+"486","carrot","<ed><a0><be><ed><b5><95>",U+1F955
+"487","ear of corn","<ed><a0><bc><ed><bc><bd>",U+1F33D
+"488","hot pepper","<ed><a0><bc><ed><bc><b6>",U+1F336
+"489","cucumber","<ed><a0><be><ed><b5><92>",U+1F952
+"490","mushroom","<ed><a0><bc><ed><bd><84>",U+1F344
+"491","peanuts","<ed><a0><be><ed><b5><9c>",U+1F95C
+"492","chestnut","<ed><a0><bc><ed><bc><b0>",U+1F330
+"493","bread","<ed><a0><bc><ed><bd><9e>",U+1F35E
+"494","croissant","<ed><a0><be><ed><b5><90>",U+1F950
+"495","baguette bread","<ed><a0><be><ed><b5><96>",U+1F956
+"496","pancakes","<ed><a0><be><ed><b5><9e>",U+1F95E
+"497","cheese wedge","<ed><a0><be><ed><b7><80>",U+1F9C0
+"498","meat on bone","<ed><a0><bc><ed><bd><96>",U+1F356
+"499","poultry leg","<ed><a0><bc><ed><bd><97>",U+1F357
+"500","bacon","<ed><a0><be><ed><b5><93>",U+1F953
+"501","hamburger","<ed><a0><bc><ed><bd><94>",U+1F354
+"502","french fries","<ed><a0><bc><ed><bd><9f>",U+1F35F
+"503","pizza","<ed><a0><bc><ed><bd><95>",U+1F355
+"504","hot dog","<ed><a0><bc><ed><bc><ad>",U+1F32D
+"505","taco","<ed><a0><bc><ed><bc><ae>",U+1F32E
+"506","burrito","<ed><a0><bc><ed><bc><af>",U+1F32F
+"507","stuffed flatbread","<ed><a0><be><ed><b5><99>",U+1F959
+"508","egg","<ed><a0><be><ed><b5><9a>",U+1F95A
+"509","cooking","<ed><a0><bc><ed><bd><b3>",U+1F373
+"510","shallow pan of food","<ed><a0><be><ed><b5><98>",U+1F958
+"511","pot of food","<ed><a0><bc><ed><bd><b2>",U+1F372
+"512","green salad","<ed><a0><be><ed><b5><97>",U+1F957
+"513","popcorn","<ed><a0><bc><ed><bd><bf>",U+1F37F
+"514","bento box","<ed><a0><bc><ed><bd><b1>",U+1F371
+"515","rice cracker","<ed><a0><bc><ed><bd><98>",U+1F358
+"516","rice ball","<ed><a0><bc><ed><bd><99>",U+1F359
+"517","cooked rice","<ed><a0><bc><ed><bd><9a>",U+1F35A
+"518","curry rice","<ed><a0><bc><ed><bd><9b>",U+1F35B
+"519","steaming bowl","<ed><a0><bc><ed><bd><9c>",U+1F35C
+"520","spaghetti","<ed><a0><bc><ed><bd><9d>",U+1F35D
+"521","roasted sweet potato","<ed><a0><bc><ed><bd><a0>",U+1F360
+"522","oden","<ed><a0><bc><ed><bd><a2>",U+1F362
+"523","sushi","<ed><a0><bc><ed><bd><a3>",U+1F363
+"524","fried shrimp","<ed><a0><bc><ed><bd><a4>",U+1F364
+"525","fish cake with swirl","<ed><a0><bc><ed><bd><a5>",U+1F365
+"526","dango","<ed><a0><bc><ed><bd><a1>",U+1F361
+"527","soft ice cream","<ed><a0><bc><ed><bd><a6>",U+1F366
+"528","shaved ice","<ed><a0><bc><ed><bd><a7>",U+1F367
+"529","ice cream","<ed><a0><bc><ed><bd><a8>",U+1F368
+"530","doughnut","<ed><a0><bc><ed><bd><a9>",U+1F369
+"531","cookie","<ed><a0><bc><ed><bd><aa>",U+1F36A
+"532","birthday cake","<ed><a0><bc><ed><be><82>",U+1F382
+"533","shortcake","<ed><a0><bc><ed><bd><b0>",U+1F370
+"534","chocolate bar","<ed><a0><bc><ed><bd><ab>",U+1F36B
+"535","candy","<ed><a0><bc><ed><bd><ac>",U+1F36C
+"536","lollipop","<ed><a0><bc><ed><bd><ad>",U+1F36D
+"537","custard","<ed><a0><bc><ed><bd><ae>",U+1F36E
+"538","honey pot","<ed><a0><bc><ed><bd><af>",U+1F36F
+"539","baby bottle","<ed><a0><bc><ed><bd><bc>",U+1F37C
+"540","glass of milk","<ed><a0><be><ed><b5><9b>",U+1F95B
+"541","hot beverage","<e2><98><95>",U+2615
+"542","teacup without handle","<ed><a0><bc><ed><bd><b5>",U+1F375
+"543","sake","<ed><a0><bc><ed><bd><b6>",U+1F376
+"544","bottle with popping cork","<ed><a0><bc><ed><bd><be>",U+1F37E
+"545","wine glass","<ed><a0><bc><ed><bd><b7>",U+1F377
+"546","cocktail glass","<ed><a0><bc><ed><bd><b8>",U+1F378
+"547","tropical drink","<ed><a0><bc><ed><bd><b9>",U+1F379
+"548","beer mug","<ed><a0><bc><ed><bd><ba>",U+1F37A
+"549","clinking beer mugs","<ed><a0><bc><ed><bd><bb>",U+1F37B
+"550","clinking glasses","<ed><a0><be><ed><b5><82>",U+1F942
+"551","tumbler glass","<ed><a0><be><ed><b5><83>",U+1F943
+"552","fork and knife with plate","<ed><a0><bc><ed><bd><bd>",U+1F37D
+"553","fork and knife","<ed><a0><bc><ed><bd><b4>",U+1F374
+"554","spoon","<ed><a0><be><ed><b5><84>",U+1F944
+"555","kitchen knife","<ed><a0><bd><ed><b4><aa>",U+1F52A
+"556","amphora","<ed><a0><bc><ed><bf><ba>",U+1F3FA
+"557","globe showing europe-africa","<ed><a0><bc><ed><bc><8d>",U+1F30D
+"558","globe showing americas","<ed><a0><bc><ed><bc><8e>",U+1F30E
+"559","globe showing asia-australia","<ed><a0><bc><ed><bc><8f>",U+1F30F
+"560","globe with meridians","<ed><a0><bc><ed><bc><90>",U+1F310
+"561","world map","<ed><a0><bd><ed><b7><ba>",U+1F5FA
+"562","map of japan","<ed><a0><bd><ed><b7><be>",U+1F5FE
+"563","snow-capped mountain","<ed><a0><bc><ed><bf><94>",U+1F3D4
+"564","mountain","<e2><9b><b0>",U+26F0
+"565","volcano","<ed><a0><bc><ed><bc><8b>",U+1F30B
+"566","mount fuji","<ed><a0><bd><ed><b7><bb>",U+1F5FB
+"567","camping","<ed><a0><bc><ed><bf><95>",U+1F3D5
+"568","beach with umbrella","<ed><a0><bc><ed><bf><96>",U+1F3D6
+"569","desert","<ed><a0><bc><ed><bf><9c>",U+1F3DC
+"570","desert island","<ed><a0><bc><ed><bf><9d>",U+1F3DD
+"571","national park","<ed><a0><bc><ed><bf><9e>",U+1F3DE
+"572","stadium","<ed><a0><bc><ed><bf><9f>",U+1F3DF
+"573","classical building","<ed><a0><bc><ed><bf><9b>",U+1F3DB
+"574","building construction","<ed><a0><bc><ed><bf><97>",U+1F3D7
+"575","house","<ed><a0><bc><ed><bf><98>",U+1F3D8
+"576","cityscape","<ed><a0><bc><ed><bf><99>",U+1F3D9
+"577","derelict house","<ed><a0><bc><ed><bf><9a>",U+1F3DA
+"578","house","<ed><a0><bc><ed><bf><a0>",U+1F3E0
+"579","house with garden","<ed><a0><bc><ed><bf><a1>",U+1F3E1
+"580","office building","<ed><a0><bc><ed><bf><a2>",U+1F3E2
+"581","japanese post office","<ed><a0><bc><ed><bf><a3>",U+1F3E3
+"582","post office","<ed><a0><bc><ed><bf><a4>",U+1F3E4
+"583","hospital","<ed><a0><bc><ed><bf><a5>",U+1F3E5
+"584","bank","<ed><a0><bc><ed><bf><a6>",U+1F3E6
+"585","hotel","<ed><a0><bc><ed><bf><a8>",U+1F3E8
+"586","love hotel","<ed><a0><bc><ed><bf><a9>",U+1F3E9
+"587","convenience store","<ed><a0><bc><ed><bf><aa>",U+1F3EA
+"588","school","<ed><a0><bc><ed><bf><ab>",U+1F3EB
+"589","department store","<ed><a0><bc><ed><bf><ac>",U+1F3EC
+"590","factory","<ed><a0><bc><ed><bf><ad>",U+1F3ED
+"591","japanese castle","<ed><a0><bc><ed><bf><af>",U+1F3EF
+"592","castle","<ed><a0><bc><ed><bf><b0>",U+1F3F0
+"593","wedding","<ed><a0><bd><ed><b2><92>",U+1F492
+"594","tokyo tower","<ed><a0><bd><ed><b7><bc>",U+1F5FC
+"595","statue of liberty","<ed><a0><bd><ed><b7><bd>",U+1F5FD
+"596","church","<e2><9b><aa>",U+26EA
+"597","mosque","<ed><a0><bd><ed><b5><8c>",U+1F54C
+"598","synagogue","<ed><a0><bd><ed><b5><8d>",U+1F54D
+"599","shinto shrine","<e2><9b><a9>",U+26E9
+"600","kaaba","<ed><a0><bd><ed><b5><8b>",U+1F54B
+"601","fountain","<e2><9b><b2>",U+26F2
+"602","tent","<e2><9b><ba>",U+26FA
+"603","foggy","<ed><a0><bc><ed><bc><81>",U+1F301
+"604","night with stars","<ed><a0><bc><ed><bc><83>",U+1F303
+"605","sunrise over mountains","<ed><a0><bc><ed><bc><84>",U+1F304
+"606","sunrise","<ed><a0><bc><ed><bc><85>",U+1F305
+"607","cityscape at dusk","<ed><a0><bc><ed><bc><86>",U+1F306
+"608","sunset","<ed><a0><bc><ed><bc><87>",U+1F307
+"609","bridge at night","<ed><a0><bc><ed><bc><89>",U+1F309
+"610","hot springs","<e2><99><a8>",U+2668
+"611","milky way","<ed><a0><bc><ed><bc><8c>",U+1F30C
+"612","carousel horse","<ed><a0><bc><ed><be><a0>",U+1F3A0
+"613","ferris wheel","<ed><a0><bc><ed><be><a1>",U+1F3A1
+"614","roller coaster","<ed><a0><bc><ed><be><a2>",U+1F3A2
+"615","barber pole","<ed><a0><bd><ed><b2><88>",U+1F488
+"616","circus tent","<ed><a0><bc><ed><be><aa>",U+1F3AA
+"617","performing arts","<ed><a0><bc><ed><be><ad>",U+1F3AD
+"618","framed picture","<ed><a0><bd><ed><b6><bc>",U+1F5BC
+"619","artist palette","<ed><a0><bc><ed><be><a8>",U+1F3A8
+"620","slot machine","<ed><a0><bc><ed><be><b0>",U+1F3B0
+"621","locomotive","<ed><a0><bd><ed><ba><82>",U+1F682
+"622","railway car","<ed><a0><bd><ed><ba><83>",U+1F683
+"623","high-speed train","<ed><a0><bd><ed><ba><84>",U+1F684
+"624","high-speed train with bullet nose","<ed><a0><bd><ed><ba><85>",U+1F685
+"625","train","<ed><a0><bd><ed><ba><86>",U+1F686
+"626","metro","<ed><a0><bd><ed><ba><87>",U+1F687
+"627","light rail","<ed><a0><bd><ed><ba><88>",U+1F688
+"628","station","<ed><a0><bd><ed><ba><89>",U+1F689
+"629","tram","<ed><a0><bd><ed><ba><8a>",U+1F68A
+"630","monorail","<ed><a0><bd><ed><ba><9d>",U+1F69D
+"631","mountain railway","<ed><a0><bd><ed><ba><9e>",U+1F69E
+"632","tram car","<ed><a0><bd><ed><ba><8b>",U+1F68B
+"633","bus","<ed><a0><bd><ed><ba><8c>",U+1F68C
+"634","oncoming bus","<ed><a0><bd><ed><ba><8d>",U+1F68D
+"635","trolleybus","<ed><a0><bd><ed><ba><8e>",U+1F68E
+"636","minibus","<ed><a0><bd><ed><ba><90>",U+1F690
+"637","ambulance","<ed><a0><bd><ed><ba><91>",U+1F691
+"638","fire engine","<ed><a0><bd><ed><ba><92>",U+1F692
+"639","police car","<ed><a0><bd><ed><ba><93>",U+1F693
+"640","oncoming police car","<ed><a0><bd><ed><ba><94>",U+1F694
+"641","taxi","<ed><a0><bd><ed><ba><95>",U+1F695
+"642","oncoming taxi","<ed><a0><bd><ed><ba><96>",U+1F696
+"643","automobile","<ed><a0><bd><ed><ba><97>",U+1F697
+"644","oncoming automobile","<ed><a0><bd><ed><ba><98>",U+1F698
+"645","sport utility vehicle","<ed><a0><bd><ed><ba><99>",U+1F699
+"646","delivery truck","<ed><a0><bd><ed><ba><9a>",U+1F69A
+"647","articulated lorry","<ed><a0><bd><ed><ba><9b>",U+1F69B
+"648","tractor","<ed><a0><bd><ed><ba><9c>",U+1F69C
+"649","bicycle","<ed><a0><bd><ed><ba><b2>",U+1F6B2
+"650","kick scooter","<ed><a0><bd><ed><bb><b4>",U+1F6F4
+"651","motor scooter","<ed><a0><bd><ed><bb><b5>",U+1F6F5
+"652","bus stop","<ed><a0><bd><ed><ba><8f>",U+1F68F
+"653","motorway","<ed><a0><bd><ed><bb><a3>",U+1F6E3
+"654","railway track","<ed><a0><bd><ed><bb><a4>",U+1F6E4
+"655","fuel pump","<e2><9b><bd>",U+26FD
+"656","police car light","<ed><a0><bd><ed><ba><a8>",U+1F6A8
+"657","horizontal traffic light","<ed><a0><bd><ed><ba><a5>",U+1F6A5
+"658","vertical traffic light","<ed><a0><bd><ed><ba><a6>",U+1F6A6
+"659","construction","<ed><a0><bd><ed><ba><a7>",U+1F6A7
+"660","stop sign","<ed><a0><bd><ed><bb><91>",U+1F6D1
+"661","anchor","<e2><9a><93>",U+2693
+"662","sailboat","<e2><9b><b5>",U+26F5
+"663","canoe","<ed><a0><bd><ed><bb><b6>",U+1F6F6
+"664","speedboat","<ed><a0><bd><ed><ba><a4>",U+1F6A4
+"665","passenger ship","<ed><a0><bd><ed><bb><b3>",U+1F6F3
+"666","ferry","<e2><9b><b4>",U+26F4
+"667","motor boat","<ed><a0><bd><ed><bb><a5>",U+1F6E5
+"668","ship","<ed><a0><bd><ed><ba><a2>",U+1F6A2
+"669","airplane","<e2><9c><88>",U+2708
+"670","small airplane","<ed><a0><bd><ed><bb><a9>",U+1F6E9
+"671","airplane departure","<ed><a0><bd><ed><bb><ab>",U+1F6EB
+"672","airplane arrival","<ed><a0><bd><ed><bb><ac>",U+1F6EC
+"673","seat","<ed><a0><bd><ed><b2><ba>",U+1F4BA
+"674","helicopter","<ed><a0><bd><ed><ba><81>",U+1F681
+"675","suspension railway","<ed><a0><bd><ed><ba><9f>",U+1F69F
+"676","mountain cableway","<ed><a0><bd><ed><ba><a0>",U+1F6A0
+"677","aerial tramway","<ed><a0><bd><ed><ba><a1>",U+1F6A1
+"678","rocket","<ed><a0><bd><ed><ba><80>",U+1F680
+"679","satellite","<ed><a0><bd><ed><bb><b0>",U+1F6F0
+"680","bellhop bell","<ed><a0><bd><ed><bb><8e>",U+1F6CE
+"681","door","<ed><a0><bd><ed><ba><aa>",U+1F6AA
+"682","person in bed","<ed><a0><bd><ed><bb><8c>",U+1F6CC
+"683","bed","<ed><a0><bd><ed><bb><8f>",U+1F6CF
+"684","couch and lamp","<ed><a0><bd><ed><bb><8b>",U+1F6CB
+"685","toilet","<ed><a0><bd><ed><ba><bd>",U+1F6BD
+"686","shower","<ed><a0><bd><ed><ba><bf>",U+1F6BF
+"687","person taking bath","<ed><a0><bd><ed><bb><80>",U+1F6C0
+"688","bathtub","<ed><a0><bd><ed><bb><81>",U+1F6C1
+"689","hourglass","<e2><8c><9b>",U+231B
+"690","hourglass with flowing sand","<e2><8f><b3>",U+23F3
+"691","watch","<e2><8c><9a>",U+231A
+"692","alarm clock","<e2><8f><b0>",U+23F0
+"693","stopwatch","<e2><8f><b1>",U+23F1
+"694","timer clock","<e2><8f><b2>",U+23F2
+"695","mantelpiece clock","<ed><a0><bd><ed><b5><b0>",U+1F570
+"696","twelve o„¢‚Ç¨‚Ñ¢clock","<ed><a0><bd><ed><b5><9b>",U+1F55B
+"697","twelve-thirty","<ed><a0><bd><ed><b5><a7>",U+1F567
+"698","one o„¢‚Ç¨‚Ñ¢clock","<ed><a0><bd><ed><b5><90>",U+1F550
+"699","one-thirty","<ed><a0><bd><ed><b5><9c>",U+1F55C
+"700","two o„¢‚Ç¨‚Ñ¢clock","<ed><a0><bd><ed><b5><91>",U+1F551
+"701","two-thirty","<ed><a0><bd><ed><b5><9d>",U+1F55D
+"702","three o„¢‚Ç¨‚Ñ¢clock","<ed><a0><bd><ed><b5><92>",U+1F552
+"703","three-thirty","<ed><a0><bd><ed><b5><9e>",U+1F55E
+"704","four o„¢‚Ç¨‚Ñ¢clock","<ed><a0><bd><ed><b5><93>",U+1F553
+"705","four-thirty","<ed><a0><bd><ed><b5><9f>",U+1F55F
+"706","five o„¢‚Ç¨‚Ñ¢clock","<ed><a0><bd><ed><b5><94>",U+1F554
+"707","five-thirty","<ed><a0><bd><ed><b5><a0>",U+1F560
+"708","six o„¢‚Ç¨‚Ñ¢clock","<ed><a0><bd><ed><b5><95>",U+1F555
+"709","six-thirty","<ed><a0><bd><ed><b5><a1>",U+1F561
+"710","seven o„¢‚Ç¨‚Ñ¢clock","<ed><a0><bd><ed><b5><96>",U+1F556
+"711","seven-thirty","<ed><a0><bd><ed><b5><a2>",U+1F562
+"712","eight o„¢‚Ç¨‚Ñ¢clock","<ed><a0><bd><ed><b5><97>",U+1F557
+"713","eight-thirty","<ed><a0><bd><ed><b5><a3>",U+1F563
+"714","nine o„¢‚Ç¨‚Ñ¢clock","<ed><a0><bd><ed><b5><98>",U+1F558
+"715","nine-thirty","<ed><a0><bd><ed><b5><a4>",U+1F564
+"716","ten o„¢‚Ç¨‚Ñ¢clock","<ed><a0><bd><ed><b5><99>",U+1F559
+"717","ten-thirty","<ed><a0><bd><ed><b5><a5>",U+1F565
+"718","eleven o„¢‚Ç¨‚Ñ¢clock","<ed><a0><bd><ed><b5><9a>",U+1F55A
+"719","eleven-thirty","<ed><a0><bd><ed><b5><a6>",U+1F566
+"720","new moon","<ed><a0><bc><ed><bc><91>",U+1F311
+"721","waxing crescent moon","<ed><a0><bc><ed><bc><92>",U+1F312
+"722","first quarter moon","<ed><a0><bc><ed><bc><93>",U+1F313
+"723","waxing gibbous moon","<ed><a0><bc><ed><bc><94>",U+1F314
+"724","full moon","<ed><a0><bc><ed><bc><95>",U+1F315
+"725","waning gibbous moon","<ed><a0><bc><ed><bc><96>",U+1F316
+"726","last quarter moon","<ed><a0><bc><ed><bc><97>",U+1F317
+"727","waning crescent moon","<ed><a0><bc><ed><bc><98>",U+1F318
+"728","crescent moon","<ed><a0><bc><ed><bc><99>",U+1F319
+"729","new moon face","<ed><a0><bc><ed><bc><9a>",U+1F31A
+"730","first quarter moon with face","<ed><a0><bc><ed><bc><9b>",U+1F31B
+"731","last quarter moon with face","<ed><a0><bc><ed><bc><9c>",U+1F31C
+"732","thermometer","<ed><a0><bc><ed><bc><a1>",U+1F321
+"733","sun","<e2><98><80>",U+2600
+"734","full moon with face","<ed><a0><bc><ed><bc><9d>",U+1F31D
+"735","sun with face","<ed><a0><bc><ed><bc><9e>",U+1F31E
+"736","white medium star","<e2><ad><90>",U+2B50
+"737","glowing star","<ed><a0><bc><ed><bc><9f>",U+1F31F
+"738","shooting star","<ed><a0><bc><ed><bc><a0>",U+1F320
+"739","cloud","<e2><98><81>",U+2601
+"740","sun behind cloud","<e2><9b><85>",U+26C5
+"741","cloud with lightning and rain","<e2><9b><88>",U+26C8
+"742","sun behind small cloud","<ed><a0><bc><ed><bc><a4>",U+1F324
+"743","sun behind large cloud","<ed><a0><bc><ed><bc><a5>",U+1F325
+"744","sun behind rain cloud","<ed><a0><bc><ed><bc><a6>",U+1F326
+"745","cloud with rain","<ed><a0><bc><ed><bc><a7>",U+1F327
+"746","cloud with snow","<ed><a0><bc><ed><bc><a8>",U+1F328
+"747","cloud with lightning","<ed><a0><bc><ed><bc><a9>",U+1F329
+"748","tornado","<ed><a0><bc><ed><bc><aa>",U+1F32A
+"749","fog","<ed><a0><bc><ed><bc><ab>",U+1F32B
+"750","wind face","<ed><a0><bc><ed><bc><ac>",U+1F32C
+"751","cyclone","<ed><a0><bc><ed><bc><80>",U+1F300
+"752","rainbow","<ed><a0><bc><ed><bc><88>",U+1F308
+"753","closed umbrella","<ed><a0><bc><ed><bc><82>",U+1F302
+"754","umbrella","<e2><98><82>",U+2602
+"755","umbrella with rain drops","<e2><98><94>",U+2614
+"756","umbrella on ground","<e2><9b><b1>",U+26F1
+"757","high voltage","<e2><9a><a1>",U+26A1
+"758","snowflake","<e2><9d><84>",U+2744
+"759","snowman","<e2><98><83>",U+2603
+"760","snowman without snow","<e2><9b><84>",U+26C4
+"761","comet","<e2><98><84>",U+2604
+"762","fire","<ed><a0><bd><ed><b4><a5>",U+1F525
+"763","droplet","<ed><a0><bd><ed><b2><a7>",U+1F4A7
+"764","water wave","<ed><a0><bc><ed><bc><8a>",U+1F30A
+"765","jack-o-lantern","<ed><a0><bc><ed><be><83>",U+1F383
+"766","christmas tree","<ed><a0><bc><ed><be><84>",U+1F384
+"767","fireworks","<ed><a0><bc><ed><be><86>",U+1F386
+"768","sparkler","<ed><a0><bc><ed><be><87>",U+1F387
+"769","sparkles","<e2><9c><a8>",U+2728
+"770","balloon","<ed><a0><bc><ed><be><88>",U+1F388
+"771","party popper","<ed><a0><bc><ed><be><89>",U+1F389
+"772","confetti ball","<ed><a0><bc><ed><be><8a>",U+1F38A
+"773","tanabata tree","<ed><a0><bc><ed><be><8b>",U+1F38B
+"774","pine decoration","<ed><a0><bc><ed><be><8d>",U+1F38D
+"775","japanese dolls","<ed><a0><bc><ed><be><8e>",U+1F38E
+"776","carp streamer","<ed><a0><bc><ed><be><8f>",U+1F38F
+"777","wind chime","<ed><a0><bc><ed><be><90>",U+1F390
+"778","moon viewing ceremony","<ed><a0><bc><ed><be><91>",U+1F391
+"779","ribbon","<ed><a0><bc><ed><be><80>",U+1F380
+"780","wrapped gift","<ed><a0><bc><ed><be><81>",U+1F381
+"781","reminder ribbon","<ed><a0><bc><ed><be><97>",U+1F397
+"782","admission tickets","<ed><a0><bc><ed><be><9f>",U+1F39F
+"783","ticket","<ed><a0><bc><ed><be><ab>",U+1F3AB
+"784","military medal","<ed><a0><bc><ed><be><96>",U+1F396
+"785","trophy","<ed><a0><bc><ed><bf><86>",U+1F3C6
+"786","sports medal","<ed><a0><bc><ed><bf><85>",U+1F3C5
+"787","1st place medal","<ed><a0><be><ed><b5><87>",U+1F947
+"788","2nd place medal","<ed><a0><be><ed><b5><88>",U+1F948
+"789","3rd place medal","<ed><a0><be><ed><b5><89>",U+1F949
+"790","soccer ball","<e2><9a><bd>",U+26BD
+"791","baseball","<e2><9a><be>",U+26BE
+"792","basketball","<ed><a0><bc><ed><bf><80>",U+1F3C0
+"793","volleyball","<ed><a0><bc><ed><bf><90>",U+1F3D0
+"794","american football","<ed><a0><bc><ed><bf><88>",U+1F3C8
+"795","rugby football","<ed><a0><bc><ed><bf><89>",U+1F3C9
+"796","tennis","<ed><a0><bc><ed><be><be>",U+1F3BE
+"797","pool 8 ball","<ed><a0><bc><ed><be><b1>",U+1F3B1
+"798","bowling","<ed><a0><bc><ed><be><b3>",U+1F3B3
+"799","cricket","<ed><a0><bc><ed><bf><8f>",U+1F3CF
+"800","field hockey","<ed><a0><bc><ed><bf><91>",U+1F3D1
+"801","ice hockey","<ed><a0><bc><ed><bf><92>",U+1F3D2
+"802","ping pong","<ed><a0><bc><ed><bf><93>",U+1F3D3
+"803","badminton","<ed><a0><bc><ed><bf><b8>",U+1F3F8
+"804","boxing glove","<ed><a0><be><ed><b5><8a>",U+1F94A
+"805","martial arts uniform","<ed><a0><be><ed><b5><8b>",U+1F94B
+"806","goal net","<ed><a0><be><ed><b5><85>",U+1F945
+"807","direct hit","<ed><a0><bc><ed><be><af>",U+1F3AF
+"808","flag in hole","<e2><9b><b3>",U+26F3
+"809","ice skate","<e2><9b><b8>",U+26F8
+"810","fishing pole","<ed><a0><bc><ed><be><a3>",U+1F3A3
+"811","running shirt","<ed><a0><bc><ed><be><bd>",U+1F3BD
+"812","skis","<ed><a0><bc><ed><be><bf>",U+1F3BF
+"813","video game","<ed><a0><bc><ed><be><ae>",U+1F3AE
+"814","joystick","<ed><a0><bd><ed><b5><b9>",U+1F579
+"815","game die","<ed><a0><bc><ed><be><b2>",U+1F3B2
+"816","spade suit","<e2><99><a0>",U+2660
+"817","heart suit","<e2><99><a5>",U+2665
+"818","diamond suit","<e2><99><a6>",U+2666
+"819","club suit","<e2><99><a3>",U+2663
+"820","joker","<ed><a0><bc><ed><b3><8f>",U+1F0CF
+"821","mahjong red dragon","<ed><a0><bc><ed><b0><84>",U+1F004
+"822","flower playing cards","<ed><a0><bc><ed><be><b4>",U+1F3B4
+"823","muted speaker","<ed><a0><bd><ed><b4><87>",U+1F507
+"824","speaker low volume","<ed><a0><bd><ed><b4><88>",U+1F508
+"825","speaker medium volume","<ed><a0><bd><ed><b4><89>",U+1F509
+"826","speaker high volume","<ed><a0><bd><ed><b4><8a>",U+1F50A
+"827","loudspeaker","<ed><a0><bd><ed><b3><a2>",U+1F4E2
+"828","megaphone","<ed><a0><bd><ed><b3><a3>",U+1F4E3
+"829","postal horn","<ed><a0><bd><ed><b3><af>",U+1F4EF
+"830","bell","<ed><a0><bd><ed><b4><94>",U+1F514
+"831","bell with slash","<ed><a0><bd><ed><b4><95>",U+1F515
+"832","musical score","<ed><a0><bc><ed><be><bc>",U+1F3BC
+"833","musical note","<ed><a0><bc><ed><be><b5>",U+1F3B5
+"834","musical notes","<ed><a0><bc><ed><be><b6>",U+1F3B6
+"835","studio microphone","<ed><a0><bc><ed><be><99>",U+1F399
+"836","level slider","<ed><a0><bc><ed><be><9a>",U+1F39A
+"837","control knobs","<ed><a0><bc><ed><be><9b>",U+1F39B
+"838","microphone","<ed><a0><bc><ed><be><a4>",U+1F3A4
+"839","headphone","<ed><a0><bc><ed><be><a7>",U+1F3A7
+"840","radio","<ed><a0><bd><ed><b3><bb>",U+1F4FB
+"841","saxophone","<ed><a0><bc><ed><be><b7>",U+1F3B7
+"842","guitar","<ed><a0><bc><ed><be><b8>",U+1F3B8
+"843","musical keyboard","<ed><a0><bc><ed><be><b9>",U+1F3B9
+"844","trumpet","<ed><a0><bc><ed><be><ba>",U+1F3BA
+"845","violin","<ed><a0><bc><ed><be><bb>",U+1F3BB
+"846","drum","<ed><a0><be><ed><b5><81>",U+1F941
+"847","mobile phone","<ed><a0><bd><ed><b3><b1>",U+1F4F1
+"848","mobile phone with arrow","<ed><a0><bd><ed><b3><b2>",U+1F4F2
+"849","telephone","<e2><98><8e>",U+260E
+"850","telephone receiver","<ed><a0><bd><ed><b3><9e>",U+1F4DE
+"851","pager","<ed><a0><bd><ed><b3><9f>",U+1F4DF
+"852","fax machine","<ed><a0><bd><ed><b3><a0>",U+1F4E0
+"853","battery","<ed><a0><bd><ed><b4><8b>",U+1F50B
+"854","electric plug","<ed><a0><bd><ed><b4><8c>",U+1F50C
+"855","laptop computer","<ed><a0><bd><ed><b2><bb>",U+1F4BB
+"856","desktop computer","<ed><a0><bd><ed><b6><a5>",U+1F5A5
+"857","printer","<ed><a0><bd><ed><b6><a8>",U+1F5A8
+"858","keyboard","<e2><8c><a8>",U+2328
+"859","computer mouse","<ed><a0><bd><ed><b6><b1>",U+1F5B1
+"860","trackball","<ed><a0><bd><ed><b6><b2>",U+1F5B2
+"861","computer disk","<ed><a0><bd><ed><b2><bd>",U+1F4BD
+"862","floppy disk","<ed><a0><bd><ed><b2><be>",U+1F4BE
+"863","optical disk","<ed><a0><bd><ed><b2><bf>",U+1F4BF
+"864","dvd","<ed><a0><bd><ed><b3><80>",U+1F4C0
+"865","movie camera","<ed><a0><bc><ed><be><a5>",U+1F3A5
+"866","film frames","<ed><a0><bc><ed><be><9e>",U+1F39E
+"867","film projector","<ed><a0><bd><ed><b3><bd>",U+1F4FD
+"868","clapper board","<ed><a0><bc><ed><be><ac>",U+1F3AC
+"869","television","<ed><a0><bd><ed><b3><ba>",U+1F4FA
+"870","camera","<ed><a0><bd><ed><b3><b7>",U+1F4F7
+"871","camera with flash","<ed><a0><bd><ed><b3><b8>",U+1F4F8
+"872","video camera","<ed><a0><bd><ed><b3><b9>",U+1F4F9
+"873","videocassette","<ed><a0><bd><ed><b3><bc>",U+1F4FC
+"874","left-pointing magnifying glass","<ed><a0><bd><ed><b4><8d>",U+1F50D
+"875","right-pointing magnifying glass","<ed><a0><bd><ed><b4><8e>",U+1F50E
+"876","microscope","<ed><a0><bd><ed><b4><ac>",U+1F52C
+"877","telescope","<ed><a0><bd><ed><b4><ad>",U+1F52D
+"878","satellite antenna","<ed><a0><bd><ed><b3><a1>",U+1F4E1
+"879","candle","<ed><a0><bd><ed><b5><af>",U+1F56F
+"880","light bulb","<ed><a0><bd><ed><b2><a1>",U+1F4A1
+"881","flashlight","<ed><a0><bd><ed><b4><a6>",U+1F526
+"882","red paper lantern","<ed><a0><bc><ed><bf><ae>",U+1F3EE
+"883","notebook with decorative cover","<ed><a0><bd><ed><b3><94>",U+1F4D4
+"884","closed book","<ed><a0><bd><ed><b3><95>",U+1F4D5
+"885","open book","<ed><a0><bd><ed><b3><96>",U+1F4D6
+"886","green book","<ed><a0><bd><ed><b3><97>",U+1F4D7
+"887","blue book","<ed><a0><bd><ed><b3><98>",U+1F4D8
+"888","orange book","<ed><a0><bd><ed><b3><99>",U+1F4D9
+"889","books","<ed><a0><bd><ed><b3><9a>",U+1F4DA
+"890","notebook","<ed><a0><bd><ed><b3><93>",U+1F4D3
+"891","ledger","<ed><a0><bd><ed><b3><92>",U+1F4D2
+"892","page with curl","<ed><a0><bd><ed><b3><83>",U+1F4C3
+"893","scroll","<ed><a0><bd><ed><b3><9c>",U+1F4DC
+"894","page facing up","<ed><a0><bd><ed><b3><84>",U+1F4C4
+"895","newspaper","<ed><a0><bd><ed><b3><b0>",U+1F4F0
+"896","rolled-up newspaper","<ed><a0><bd><ed><b7><9e>",U+1F5DE
+"897","bookmark tabs","<ed><a0><bd><ed><b3><91>",U+1F4D1
+"898","bookmark","<ed><a0><bd><ed><b4><96>",U+1F516
+"899","label","<ed><a0><bc><ed><bf><b7>",U+1F3F7
+"900","money bag","<ed><a0><bd><ed><b2><b0>",U+1F4B0
+"901","yen banknote","<ed><a0><bd><ed><b2><b4>",U+1F4B4
+"902","dollar banknote","<ed><a0><bd><ed><b2><b5>",U+1F4B5
+"903","euro banknote","<ed><a0><bd><ed><b2><b6>",U+1F4B6
+"904","pound banknote","<ed><a0><bd><ed><b2><b7>",U+1F4B7
+"905","money with wings","<ed><a0><bd><ed><b2><b8>",U+1F4B8
+"906","credit card","<ed><a0><bd><ed><b2><b3>",U+1F4B3
+"907","chart increasing with yen","<ed><a0><bd><ed><b2><b9>",U+1F4B9
+"908","currency exchange","<ed><a0><bd><ed><b2><b1>",U+1F4B1
+"909","heavy dollar sign","<ed><a0><bd><ed><b2><b2>",U+1F4B2
+"910","envelope","<e2><9c><89>",U+2709
+"911","e-mail","<ed><a0><bd><ed><b3><a7>",U+1F4E7
+"912","incoming envelope","<ed><a0><bd><ed><b3><a8>",U+1F4E8
+"913","envelope with arrow","<ed><a0><bd><ed><b3><a9>",U+1F4E9
+"914","outbox tray","<ed><a0><bd><ed><b3><a4>",U+1F4E4
+"915","inbox tray","<ed><a0><bd><ed><b3><a5>",U+1F4E5
+"916","package","<ed><a0><bd><ed><b3><a6>",U+1F4E6
+"917","closed mailbox with raised flag","<ed><a0><bd><ed><b3><ab>",U+1F4EB
+"918","closed mailbox with lowered flag","<ed><a0><bd><ed><b3><aa>",U+1F4EA
+"919","open mailbox with raised flag","<ed><a0><bd><ed><b3><ac>",U+1F4EC
+"920","open mailbox with lowered flag","<ed><a0><bd><ed><b3><ad>",U+1F4ED
+"921","postbox","<ed><a0><bd><ed><b3><ae>",U+1F4EE
+"922","ballot box with ballot","<ed><a0><bd><ed><b7><b3>",U+1F5F3
+"923","pencil","<e2><9c><8f>",U+270F
+"924","black nib","<e2><9c><92>",U+2712
+"925","fountain pen","<ed><a0><bd><ed><b6><8b>",U+1F58B
+"926","pen","<ed><a0><bd><ed><b6><8a>",U+1F58A
+"927","paintbrush","<ed><a0><bd><ed><b6><8c>",U+1F58C
+"928","crayon","<ed><a0><bd><ed><b6><8d>",U+1F58D
+"929","memo","<ed><a0><bd><ed><b3><9d>",U+1F4DD
+"930","briefcase","<ed><a0><bd><ed><b2><bc>",U+1F4BC
+"931","file folder","<ed><a0><bd><ed><b3><81>",U+1F4C1
+"932","open file folder","<ed><a0><bd><ed><b3><82>",U+1F4C2
+"933","card index dividers","<ed><a0><bd><ed><b7><82>",U+1F5C2
+"934","calendar","<ed><a0><bd><ed><b3><85>",U+1F4C5
+"935","tear-off calendar","<ed><a0><bd><ed><b3><86>",U+1F4C6
+"936","spiral notepad","<ed><a0><bd><ed><b7><92>",U+1F5D2
+"937","spiral calendar","<ed><a0><bd><ed><b7><93>",U+1F5D3
+"938","card index","<ed><a0><bd><ed><b3><87>",U+1F4C7
+"939","chart increasing","<ed><a0><bd><ed><b3><88>",U+1F4C8
+"940","chart decreasing","<ed><a0><bd><ed><b3><89>",U+1F4C9
+"941","bar chart","<ed><a0><bd><ed><b3><8a>",U+1F4CA
+"942","clipboard","<ed><a0><bd><ed><b3><8b>",U+1F4CB
+"943","pushpin","<ed><a0><bd><ed><b3><8c>",U+1F4CC
+"944","round pushpin","<ed><a0><bd><ed><b3><8d>",U+1F4CD
+"945","paperclip","<ed><a0><bd><ed><b3><8e>",U+1F4CE
+"946","linked paperclips","<ed><a0><bd><ed><b6><87>",U+1F587
+"947","straight ruler","<ed><a0><bd><ed><b3><8f>",U+1F4CF
+"948","triangular ruler","<ed><a0><bd><ed><b3><90>",U+1F4D0
+"949","scissors","<e2><9c><82>",U+2702
+"950","card file box","<ed><a0><bd><ed><b7><83>",U+1F5C3
+"951","file cabinet","<ed><a0><bd><ed><b7><84>",U+1F5C4
+"952","wastebasket","<ed><a0><bd><ed><b7><91>",U+1F5D1
+"953","locked","<ed><a0><bd><ed><b4><92>",U+1F512
+"954","unlocked","<ed><a0><bd><ed><b4><93>",U+1F513
+"955","locked with pen","<ed><a0><bd><ed><b4><8f>",U+1F50F
+"956","locked with key","<ed><a0><bd><ed><b4><90>",U+1F510
+"957","key","<ed><a0><bd><ed><b4><91>",U+1F511
+"958","old key","<ed><a0><bd><ed><b7><9d>",U+1F5DD
+"959","hammer","<ed><a0><bd><ed><b4><a8>",U+1F528
+"960","pick","<e2><9b><8f>",U+26CF
+"961","hammer and pick","<e2><9a><92>",U+2692
+"962","hammer and wrench","<ed><a0><bd><ed><bb><a0>",U+1F6E0
+"963","dagger","<ed><a0><bd><ed><b7><a1>",U+1F5E1
+"964","crossed swords","<e2><9a><94>",U+2694
+"965","pistol","<ed><a0><bd><ed><b4><ab>",U+1F52B
+"966","bow and arrow","<ed><a0><bc><ed><bf><b9>",U+1F3F9
+"967","shield","<ed><a0><bd><ed><bb><a1>",U+1F6E1
+"968","wrench","<ed><a0><bd><ed><b4><a7>",U+1F527
+"969","nut and bolt","<ed><a0><bd><ed><b4><a9>",U+1F529
+"970","gear","<e2><9a><99>",U+2699
+"971","clamp","<ed><a0><bd><ed><b7><9c>",U+1F5DC
+"972","alembic","<e2><9a><97>",U+2697
+"973","balance scale","<e2><9a><96>",U+2696
+"974","link","<ed><a0><bd><ed><b4><97>",U+1F517
+"975","chains","<e2><9b><93>",U+26D3
+"976","syringe","<ed><a0><bd><ed><b2><89>",U+1F489
+"977","pill","<ed><a0><bd><ed><b2><8a>",U+1F48A
+"978","cigarette","<ed><a0><bd><ed><ba><ac>",U+1F6AC
+"979","coffin","<e2><9a><b0>",U+26B0
+"980","funeral urn","<e2><9a><b1>",U+26B1
+"981","moai","<ed><a0><bd><ed><b7><bf>",U+1F5FF
+"982","oil drum","<ed><a0><bd><ed><bb><a2>",U+1F6E2
+"983","crystal ball","<ed><a0><bd><ed><b4><ae>",U+1F52E
+"984","shopping cart","<ed><a0><bd><ed><bb><92>",U+1F6D2
+"985","atm sign","<ed><a0><bc><ed><bf><a7>",U+1F3E7
+"986","litter in bin sign","<ed><a0><bd><ed><ba><ae>",U+1F6AE
+"987","potable water","<ed><a0><bd><ed><ba><b0>",U+1F6B0
+"988","wheelchair symbol","<e2><99><bf>",U+267F
+"989","men„¢‚Ç¨‚Ñ¢s room","<ed><a0><bd><ed><ba><b9>",U+1F6B9
+"990","women„¢‚Ç¨‚Ñ¢s room","<ed><a0><bd><ed><ba><ba>",U+1F6BA
+"991","restroom","<ed><a0><bd><ed><ba><bb>",U+1F6BB
+"992","baby symbol","<ed><a0><bd><ed><ba><bc>",U+1F6BC
+"993","water closet","<ed><a0><bd><ed><ba><be>",U+1F6BE
+"994","passport control","<ed><a0><bd><ed><bb><82>",U+1F6C2
+"995","customs","<ed><a0><bd><ed><bb><83>",U+1F6C3
+"996","baggage claim","<ed><a0><bd><ed><bb><84>",U+1F6C4
+"997","left luggage","<ed><a0><bd><ed><bb><85>",U+1F6C5
+"998","warning","<e2><9a><a0>",U+26A0
+"999","children crossing","<ed><a0><bd><ed><ba><b8>",U+1F6B8
+"1000","no entry","<e2><9b><94>",U+26D4
+"1001","prohibited","<ed><a0><bd><ed><ba><ab>",U+1F6AB
+"1002","no bicycles","<ed><a0><bd><ed><ba><b3>",U+1F6B3
+"1003","no smoking","<ed><a0><bd><ed><ba><ad>",U+1F6AD
+"1004","no littering","<ed><a0><bd><ed><ba><af>",U+1F6AF
+"1005","non-potable water","<ed><a0><bd><ed><ba><b1>",U+1F6B1
+"1006","no pedestrians","<ed><a0><bd><ed><ba><b7>",U+1F6B7
+"1007","no mobile phones","<ed><a0><bd><ed><b3><b5>",U+1F4F5
+"1008","no one under eighteen","<ed><a0><bd><ed><b4><9e>",U+1F51E
+"1009","radioactive","<e2><98><a2>",U+2622
+"1010","biohazard","<e2><98><a3>",U+2623
+"1011","up arrow","<e2><ac><86>",U+2B06
+"1012","up-right arrow","<e2><86><97>",U+2197
+"1013","right arrow","<e2><9e><a1>",U+27A1
+"1014","down-right arrow","<e2><86><98>",U+2198
+"1015","down arrow","<e2><ac><87>",U+2B07
+"1016","down-left arrow","<e2><86><99>",U+2199
+"1017","left arrow","<e2><ac><85>",U+2B05
+"1018","up-left arrow","<e2><86><96>",U+2196
+"1019","up-down arrow","<e2><86><95>",U+2195
+"1020","left-right arrow","<e2><86><94>",U+2194
+"1021","right arrow curving left","<e2><86><a9>",U+21A9
+"1022","left arrow curving right","<e2><86><aa>",U+21AA
+"1023","right arrow curving up","<e2><a4><b4>",U+2934
+"1024","right arrow curving down","<e2><a4><b5>",U+2935
+"1025","clockwise vertical arrows","<ed><a0><bd><ed><b4><83>",U+1F503
+"1026","anticlockwise arrows button","<ed><a0><bd><ed><b4><84>",U+1F504
+"1027","back arrow","<ed><a0><bd><ed><b4><99>",U+1F519
+"1028","end arrow","<ed><a0><bd><ed><b4><9a>",U+1F51A
+"1029","on! arrow","<ed><a0><bd><ed><b4><9b>",U+1F51B
+"1030","soon arrow","<ed><a0><bd><ed><b4><9c>",U+1F51C
+"1031","top arrow","<ed><a0><bd><ed><b4><9d>",U+1F51D
+"1032","place of worship","<ed><a0><bd><ed><bb><90>",U+1F6D0
+"1033","atom symbol","<e2><9a><9b>",U+269B
+"1034","om","<ed><a0><bd><ed><b5><89>",U+1F549
+"1035","star of david","<e2><9c><a1>",U+2721
+"1036","wheel of dharma","<e2><98><b8>",U+2638
+"1037","yin yang","<e2><98><af>",U+262F
+"1038","latin cross","<e2><9c><9d>",U+271D
+"1039","orthodox cross","<e2><98><a6>",U+2626
+"1040","star and crescent","<e2><98><aa>",U+262A
+"1041","peace symbol","<e2><98><ae>",U+262E
+"1042","menorah","<ed><a0><bd><ed><b5><8e>",U+1F54E
+"1043","dotted six-pointed star","<ed><a0><bd><ed><b4><af>",U+1F52F
+"1044","aries","<e2><99><88>",U+2648
+"1045","taurus","<e2><99><89>",U+2649
+"1046","gemini","<e2><99><8a>",U+264A
+"1047","cancer","<e2><99><8b>",U+264B
+"1048","leo","<e2><99><8c>",U+264C
+"1049","virgo","<e2><99><8d>",U+264D
+"1050","libra","<e2><99><8e>",U+264E
+"1051","scorpius","<e2><99><8f>",U+264F
+"1052","sagittarius","<e2><99><90>",U+2650
+"1053","capricorn","<e2><99><91>",U+2651
+"1054","aquarius","<e2><99><92>",U+2652
+"1055","pisces","<e2><99><93>",U+2653
+"1056","ophiuchus","<e2><9b><8e>",U+26CE
+"1057","shuffle tracks button","<ed><a0><bd><ed><b4><80>",U+1F500
+"1058","repeat button","<ed><a0><bd><ed><b4><81>",U+1F501
+"1059","repeat single button","<ed><a0><bd><ed><b4><82>",U+1F502
+"1060","play button","<e2><96><b6>",U+25B6
+"1061","fast-forward button","<e2><8f><a9>",U+23E9
+"1062","next track button","<e2><8f><ad>",U+23ED
+"1063","play or pause button","<e2><8f><af>",U+23EF
+"1064","reverse button","<e2><97><80>",U+25C0
+"1065","fast reverse button","<e2><8f><aa>",U+23EA
+"1066","last track button","<e2><8f><ae>",U+23EE
+"1067","up button","<ed><a0><bd><ed><b4><bc>",U+1F53C
+"1068","fast up button","<e2><8f><ab>",U+23EB
+"1069","down button","<ed><a0><bd><ed><b4><bd>",U+1F53D
+"1070","fast down button","<e2><8f><ac>",U+23EC
+"1071","pause button","<e2><8f><b8>",U+23F8
+"1072","stop button","<e2><8f><b9>",U+23F9
+"1073","record button","<e2><8f><ba>",U+23FA
+"1074","eject button","<e2><8f><8f>",U+23CF
+"1075","cinema","<ed><a0><bc><ed><be><a6>",U+1F3A6
+"1076","dim button","<ed><a0><bd><ed><b4><85>",U+1F505
+"1077","bright button","<ed><a0><bd><ed><b4><86>",U+1F506
+"1078","antenna bars","<ed><a0><bd><ed><b3><b6>",U+1F4F6
+"1079","vibration mode","<ed><a0><bd><ed><b3><b3>",U+1F4F3
+"1080","mobile phone off","<ed><a0><bd><ed><b3><b4>",U+1F4F4
+"1081","recycling symbol","<e2><99><bb>",U+267B
+"1082","name badge","<ed><a0><bd><ed><b3><9b>",U+1F4DB
+"1083","fleur-de-lis","<e2><9a><9c>",U+269C
+"1084","japanese symbol for beginner","<ed><a0><bd><ed><b4><b0>",U+1F530
+"1085","trident emblem","<ed><a0><bd><ed><b4><b1>",U+1F531
+"1086","heavy large circle","<e2><ad><95>",U+2B55
+"1087","white heavy check mark","<e2><9c><85>",U+2705
+"1088","ballot box with check","<e2><98><91>",U+2611
+"1089","heavy check mark","<e2><9c><94>",U+2714
+"1090","heavy multiplication x","<e2><9c><96>",U+2716
+"1091","cross mark","<e2><9d><8c>",U+274C
+"1092","cross mark button","<e2><9d><8e>",U+274E
+"1093","heavy plus sign","<e2><9e><95>",U+2795
+"1094","female sign","<e2><99><80>",U+2640
+"1095","male sign","<e2><99><82>",U+2642
+"1096","medical symbol","<e2><9a><95>",U+2695
+"1097","heavy minus sign","<e2><9e><96>",U+2796
+"1098","heavy division sign","<e2><9e><97>",U+2797
+"1099","curly loop","<e2><9e><b0>",U+27B0
+"1100","double curly loop","<e2><9e><bf>",U+27BF
+"1101","part alternation mark","<e3><80><bd>",U+303D
+"1102","eight-spoked asterisk","<e2><9c><b3>",U+2733
+"1103","eight-pointed star","<e2><9c><b4>",U+2734
+"1104","sparkle","<e2><9d><87>",U+2747
+"1105","double exclamation mark","<e2><80><bc>",U+203C
+"1106","exclamation question mark","<e2><81><89>",U+2049
+"1107","question mark","<e2><9d><93>",U+2753
+"1108","white question mark","<e2><9d><94>",U+2754
+"1109","white exclamation mark","<e2><9d><95>",U+2755
+"1110","exclamation mark","<e2><9d><97>",U+2757
+"1111","wavy dash","<e3><80><b0>",U+3030
+"1112","copyright","<c2><a9>",U+00A9
+"1113","registered","<c2><ae>",U+00AE
+"1114","trade mark","<e2><84><a2>",U+2122
+"1115","keycap","<ef><b8><8f><e2><83><a3>",<NA>
+"1116","keycap 10","<ed><a0><bd><ed><b4><9f>",U+1F51F
+"1117","hundred points","<ed><a0><bd><ed><b2><af>",U+1F4AF
+"1118","input latin uppercase","<ed><a0><bd><ed><b4><a0>",U+1F520
+"1119","input latin lowercase","<ed><a0><bd><ed><b4><a1>",U+1F521
+"1120","input numbers","<ed><a0><bd><ed><b4><a2>",U+1F522
+"1121","input symbols","<ed><a0><bd><ed><b4><a3>",U+1F523
+"1122","input latin letters","<ed><a0><bd><ed><b4><a4>",U+1F524
+"1123","a button (blood type)","<ed><a0><bc><ed><b5><b0>",U+1F170
+"1124","ab button (blood type)","<ed><a0><bc><ed><b6><8e>",U+1F18E
+"1125","b button (blood type)","<ed><a0><bc><ed><b5><b1>",U+1F171
+"1126","cl button","<ed><a0><bc><ed><b6><91>",U+1F191
+"1127","cool button","<ed><a0><bc><ed><b6><92>",U+1F192
+"1128","free button","<ed><a0><bc><ed><b6><93>",U+1F193
+"1129","information","<e2><84><b9>",U+2139
+"1130","id button","<ed><a0><bc><ed><b6><94>",U+1F194
+"1131","circled m","<e2><93><82>",U+24C2
+"1132","new button","<ed><a0><bc><ed><b6><95>",U+1F195
+"1133","ng button","<ed><a0><bc><ed><b6><96>",U+1F196
+"1134","o button (blood type)","<ed><a0><bc><ed><b5><be>",U+1F17E
+"1135","ok button","<ed><a0><bc><ed><b6><97>",U+1F197
+"1136","p button","<ed><a0><bc><ed><b5><bf>",U+1F17F
+"1137","sos button","<ed><a0><bc><ed><b6><98>",U+1F198
+"1138","up! button","<ed><a0><bc><ed><b6><99>",U+1F199
+"1139","vs button","<ed><a0><bc><ed><b6><9a>",U+1F19A
+"1140","japanese „¢‚Ç¨Âìhere„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b8><81>",U+1F201
+"1141","japanese „¢‚Ç¨Âìservice charge„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b8><82>",U+1F202
+"1142","japanese „¢‚Ç¨Âìmonthly amount„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b8><b7>",U+1F237
+"1143","japanese „¢‚Ç¨Âìnot free of charge„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b8><b6>",U+1F236
+"1144","japanese „¢‚Ç¨Âìreserved„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b8><af>",U+1F22F
+"1145","japanese „¢‚Ç¨Âìbargain„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b9><90>",U+1F250
+"1146","japanese „¢‚Ç¨Âìdiscount„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b8><b9>",U+1F239
+"1147","japanese „¢‚Ç¨Âìfree of charge„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b8><9a>",U+1F21A
+"1148","japanese „¢‚Ç¨Âìprohibited„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b8><b2>",U+1F232
+"1149","japanese „¢‚Ç¨Âìacceptable„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b9><91>",U+1F251
+"1150","japanese „¢‚Ç¨Âìapplication„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b8><b8>",U+1F238
+"1151","japanese „¢‚Ç¨Âìpassing grade„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b8><b4>",U+1F234
+"1152","japanese „¢‚Ç¨Âìvacancy„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b8><b3>",U+1F233
+"1153","japanese „¢‚Ç¨Âìcongratulations„¢‚Ç¨‚ù button","<e3><8a><97>",U+3297
+"1154","japanese „¢‚Ç¨Âìsecret„¢‚Ç¨‚ù button","<e3><8a><99>",U+3299
+"1155","japanese „¢‚Ç¨Âìopen for business„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b8><ba>",U+1F23A
+"1156","japanese „¢‚Ç¨Âìno vacancy„¢‚Ç¨‚ù button","<ed><a0><bc><ed><b8><b5>",U+1F235
+"1157","black small square","<e2><96><aa>",U+25AA
+"1158","white small square","<e2><96><ab>",U+25AB
+"1159","white medium square","<e2><97><bb>",U+25FB
+"1160","black medium square","<e2><97><bc>",U+25FC
+"1161","white medium-small square","<e2><97><bd>",U+25FD
+"1162","black medium-small square","<e2><97><be>",U+25FE
+"1163","black large square","<e2><ac><9b>",U+2B1B
+"1164","white large square","<e2><ac><9c>",U+2B1C
+"1165","large orange diamond","<ed><a0><bd><ed><b4><b6>",U+1F536
+"1166","large blue diamond","<ed><a0><bd><ed><b4><b7>",U+1F537
+"1167","small orange diamond","<ed><a0><bd><ed><b4><b8>",U+1F538
+"1168","small blue diamond","<ed><a0><bd><ed><b4><b9>",U+1F539
+"1169","red triangle pointed up","<ed><a0><bd><ed><b4><ba>",U+1F53A
+"1170","red triangle pointed down","<ed><a0><bd><ed><b4><bb>",U+1F53B
+"1171","diamond with a dot","<ed><a0><bd><ed><b2><a0>",U+1F4A0
+"1172","radio button","<ed><a0><bd><ed><b4><98>",U+1F518
+"1173","black square button","<ed><a0><bd><ed><b4><b2>",U+1F532
+"1174","white square button","<ed><a0><bd><ed><b4><b3>",U+1F533
+"1175","white circle","<e2><9a><aa>",U+26AA
+"1176","black circle","<e2><9a><ab>",U+26AB
+"1177","red circle","<ed><a0><bd><ed><b4><b4>",U+1F534
+"1178","blue circle","<ed><a0><bd><ed><b4><b5>",U+1F535
+"1179","chequered flag","<ed><a0><bc><ed><bf><81>",U+1F3C1
+"1180","triangular flag","<ed><a0><bd><ed><ba><a9>",U+1F6A9
+"1181","crossed flags","<ed><a0><bc><ed><be><8c>",U+1F38C
+"1182","black flag","<ed><a0><bc><ed><bf><b4>",U+1F3F4
+"1183","white flag","<ed><a0><bc><ed><bf><b3>",U+1F3F3
+"1184","rainbow flag","<ed><a0><bc><ed><bf><b3><ef><b8><8f><e2><80><8d><ed><a0><bc><ed><bc><88>",<NA>
+"1185","ascension island","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><a8>",<NA>
+"1186","andorra","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><a9>",<NA>
+"1187","united arab emirates","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><aa>",<NA>
+"1188","afghanistan","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><ab>",<NA>
+"1189","antigua &amp- barbuda","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><ac>",<NA>
+"1190","anguilla","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><ae>",<NA>
+"1191","albania","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><b1>",<NA>
+"1192","armenia","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><b2>",<NA>
+"1193","angola","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><b4>",<NA>
+"1194","antarctica","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><b6>",<NA>
+"1195","argentina","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><b7>",<NA>
+"1196","american samoa","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><b8>",<NA>
+"1197","austria","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><b9>",<NA>
+"1198","australia","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><ba>",<NA>
+"1199","aruba","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><bc>",<NA>
+"1200","„É‚Ä¶land islands","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><bd>",<NA>
+"1201","azerbaijan","<ed><a0><bc><ed><b7><a6><ed><a0><bc><ed><b7><bf>",<NA>
+"1202","bosnia &amp- herzegovina","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><a6>",<NA>
+"1203","barbados","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><a7>",<NA>
+"1204","bangladesh","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><a9>",<NA>
+"1205","belgium","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><aa>",<NA>
+"1206","burkina faso","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><ab>",<NA>
+"1207","bulgaria","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><ac>",<NA>
+"1208","bahrain","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><ad>",<NA>
+"1209","burundi","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><ae>",<NA>
+"1210","benin","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><af>",<NA>
+"1211","st. barth„É‚©lemy","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><b1>",<NA>
+"1212","bermuda","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><b2>",<NA>
+"1213","brunei","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><b3>",<NA>
+"1214","bolivia","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><b4>",<NA>
+"1215","caribbean netherlands","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><b6>",<NA>
+"1216","brazil","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><b7>",<NA>
+"1217","bahamas","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><b8>",<NA>
+"1218","bhutan","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><b9>",<NA>
+"1219","bouvet island","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><bb>",<NA>
+"1220","botswana","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><bc>",<NA>
+"1221","belarus","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><be>",<NA>
+"1222","belize","<ed><a0><bc><ed><b7><a7><ed><a0><bc><ed><b7><bf>",<NA>
+"1223","canada","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><a6>",<NA>
+"1224","cocos (keeling) islands","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><a8>",<NA>
+"1225","congo - kinshasa","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><a9>",<NA>
+"1226","central african republic","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><ab>",<NA>
+"1227","congo - brazzaville","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><ac>",<NA>
+"1228","switzerland","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><ad>",<NA>
+"1229","c„É‚¥te d„¢‚Ç¨‚Ñ¢ivoire","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><ae>",<NA>
+"1230","cook islands","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><b0>",<NA>
+"1231","chile","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><b1>",<NA>
+"1232","cameroon","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><b2>",<NA>
+"1233","china","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><b3>",<NA>
+"1234","colombia","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><b4>",<NA>
+"1235","clipperton island","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><b5>",<NA>
+"1236","costa rica","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><b7>",<NA>
+"1237","cuba","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><ba>",<NA>
+"1238","cape verde","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><bb>",<NA>
+"1239","cura„É‚ßao","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><bc>",<NA>
+"1240","christmas island","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><bd>",<NA>
+"1241","cyprus","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><be>",<NA>
+"1242","czech republic","<ed><a0><bc><ed><b7><a8><ed><a0><bc><ed><b7><bf>",<NA>
+"1243","germany","<ed><a0><bc><ed><b7><a9><ed><a0><bc><ed><b7><aa>",<NA>
+"1244","diego garcia","<ed><a0><bc><ed><b7><a9><ed><a0><bc><ed><b7><ac>",<NA>
+"1245","djibouti","<ed><a0><bc><ed><b7><a9><ed><a0><bc><ed><b7><af>",<NA>
+"1246","denmark","<ed><a0><bc><ed><b7><a9><ed><a0><bc><ed><b7><b0>",<NA>
+"1247","dominica","<ed><a0><bc><ed><b7><a9><ed><a0><bc><ed><b7><b2>",<NA>
+"1248","dominican republic","<ed><a0><bc><ed><b7><a9><ed><a0><bc><ed><b7><b4>",<NA>
+"1249","algeria","<ed><a0><bc><ed><b7><a9><ed><a0><bc><ed><b7><bf>",<NA>
+"1250","ceuta &amp- melilla","<ed><a0><bc><ed><b7><aa><ed><a0><bc><ed><b7><a6>",<NA>
+"1251","ecuador","<ed><a0><bc><ed><b7><aa><ed><a0><bc><ed><b7><a8>",<NA>
+"1252","estonia","<ed><a0><bc><ed><b7><aa><ed><a0><bc><ed><b7><aa>",<NA>
+"1253","egypt","<ed><a0><bc><ed><b7><aa><ed><a0><bc><ed><b7><ac>",<NA>
+"1254","western sahara","<ed><a0><bc><ed><b7><aa><ed><a0><bc><ed><b7><ad>",<NA>
+"1255","eritrea","<ed><a0><bc><ed><b7><aa><ed><a0><bc><ed><b7><b7>",<NA>
+"1256","spain","<ed><a0><bc><ed><b7><aa><ed><a0><bc><ed><b7><b8>",<NA>
+"1257","ethiopia","<ed><a0><bc><ed><b7><aa><ed><a0><bc><ed><b7><b9>",<NA>
+"1258","european union","<ed><a0><bc><ed><b7><aa><ed><a0><bc><ed><b7><ba>",<NA>
+"1259","finland","<ed><a0><bc><ed><b7><ab><ed><a0><bc><ed><b7><ae>",<NA>
+"1260","fiji","<ed><a0><bc><ed><b7><ab><ed><a0><bc><ed><b7><af>",<NA>
+"1261","falkland islands","<ed><a0><bc><ed><b7><ab><ed><a0><bc><ed><b7><b0>",<NA>
+"1262","micronesia","<ed><a0><bc><ed><b7><ab><ed><a0><bc><ed><b7><b2>",<NA>
+"1263","faroe islands","<ed><a0><bc><ed><b7><ab><ed><a0><bc><ed><b7><b4>",<NA>
+"1264","france","<ed><a0><bc><ed><b7><ab><ed><a0><bc><ed><b7><b7>",<NA>
+"1265","gabon","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><a6>",<NA>
+"1266","united kingdom","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><a7>",<NA>
+"1267","grenada","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><a9>",<NA>
+"1268","georgia","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><aa>",<NA>
+"1269","french guiana","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><ab>",<NA>
+"1270","guernsey","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><ac>",<NA>
+"1271","ghana","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><ad>",<NA>
+"1272","gibraltar","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><ae>",<NA>
+"1273","greenland","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><b1>",<NA>
+"1274","gambia","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><b2>",<NA>
+"1275","guinea","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><b3>",<NA>
+"1276","guadeloupe","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><b5>",<NA>
+"1277","equatorial guinea","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><b6>",<NA>
+"1278","greece","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><b7>",<NA>
+"1279","south georgia &amp- south sandwich islands","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><b8>",<NA>
+"1280","guatemala","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><b9>",<NA>
+"1281","guam","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><ba>",<NA>
+"1282","guinea-bissau","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><bc>",<NA>
+"1283","guyana","<ed><a0><bc><ed><b7><ac><ed><a0><bc><ed><b7><be>",<NA>
+"1284","hong kong sar china","<ed><a0><bc><ed><b7><ad><ed><a0><bc><ed><b7><b0>",<NA>
+"1285","heard &amp- mcdonald islands","<ed><a0><bc><ed><b7><ad><ed><a0><bc><ed><b7><b2>",<NA>
+"1286","honduras","<ed><a0><bc><ed><b7><ad><ed><a0><bc><ed><b7><b3>",<NA>
+"1287","croatia","<ed><a0><bc><ed><b7><ad><ed><a0><bc><ed><b7><b7>",<NA>
+"1288","haiti","<ed><a0><bc><ed><b7><ad><ed><a0><bc><ed><b7><b9>",<NA>
+"1289","hungary","<ed><a0><bc><ed><b7><ad><ed><a0><bc><ed><b7><ba>",<NA>
+"1290","canary islands","<ed><a0><bc><ed><b7><ae><ed><a0><bc><ed><b7><a8>",<NA>
+"1291","indonesia","<ed><a0><bc><ed><b7><ae><ed><a0><bc><ed><b7><a9>",<NA>
+"1292","ireland","<ed><a0><bc><ed><b7><ae><ed><a0><bc><ed><b7><aa>",<NA>
+"1293","israel","<ed><a0><bc><ed><b7><ae><ed><a0><bc><ed><b7><b1>",<NA>
+"1294","isle of man","<ed><a0><bc><ed><b7><ae><ed><a0><bc><ed><b7><b2>",<NA>
+"1295","india","<ed><a0><bc><ed><b7><ae><ed><a0><bc><ed><b7><b3>",<NA>
+"1296","british indian ocean territory","<ed><a0><bc><ed><b7><ae><ed><a0><bc><ed><b7><b4>",<NA>
+"1297","iraq","<ed><a0><bc><ed><b7><ae><ed><a0><bc><ed><b7><b6>",<NA>
+"1298","iran","<ed><a0><bc><ed><b7><ae><ed><a0><bc><ed><b7><b7>",<NA>
+"1299","iceland","<ed><a0><bc><ed><b7><ae><ed><a0><bc><ed><b7><b8>",<NA>
+"1300","italy","<ed><a0><bc><ed><b7><ae><ed><a0><bc><ed><b7><b9>",<NA>
+"1301","jersey","<ed><a0><bc><ed><b7><af><ed><a0><bc><ed><b7><aa>",<NA>
+"1302","jamaica","<ed><a0><bc><ed><b7><af><ed><a0><bc><ed><b7><b2>",<NA>
+"1303","jordan","<ed><a0><bc><ed><b7><af><ed><a0><bc><ed><b7><b4>",<NA>
+"1304","japan","<ed><a0><bc><ed><b7><af><ed><a0><bc><ed><b7><b5>",<NA>
+"1305","kenya","<ed><a0><bc><ed><b7><b0><ed><a0><bc><ed><b7><aa>",<NA>
+"1306","kyrgyzstan","<ed><a0><bc><ed><b7><b0><ed><a0><bc><ed><b7><ac>",<NA>
+"1307","cambodia","<ed><a0><bc><ed><b7><b0><ed><a0><bc><ed><b7><ad>",<NA>
+"1308","kiribati","<ed><a0><bc><ed><b7><b0><ed><a0><bc><ed><b7><ae>",<NA>
+"1309","comoros","<ed><a0><bc><ed><b7><b0><ed><a0><bc><ed><b7><b2>",<NA>
+"1310","st. kitts &amp- nevis","<ed><a0><bc><ed><b7><b0><ed><a0><bc><ed><b7><b3>",<NA>
+"1311","north korea","<ed><a0><bc><ed><b7><b0><ed><a0><bc><ed><b7><b5>",<NA>
+"1312","south korea","<ed><a0><bc><ed><b7><b0><ed><a0><bc><ed><b7><b7>",<NA>
+"1313","kuwait","<ed><a0><bc><ed><b7><b0><ed><a0><bc><ed><b7><bc>",<NA>
+"1314","cayman islands","<ed><a0><bc><ed><b7><b0><ed><a0><bc><ed><b7><be>",<NA>
+"1315","kazakhstan","<ed><a0><bc><ed><b7><b0><ed><a0><bc><ed><b7><bf>",<NA>
+"1316","laos","<ed><a0><bc><ed><b7><b1><ed><a0><bc><ed><b7><a6>",<NA>
+"1317","lebanon","<ed><a0><bc><ed><b7><b1><ed><a0><bc><ed><b7><a7>",<NA>
+"1318","st. lucia","<ed><a0><bc><ed><b7><b1><ed><a0><bc><ed><b7><a8>",<NA>
+"1319","liechtenstein","<ed><a0><bc><ed><b7><b1><ed><a0><bc><ed><b7><ae>",<NA>
+"1320","sri lanka","<ed><a0><bc><ed><b7><b1><ed><a0><bc><ed><b7><b0>",<NA>
+"1321","liberia","<ed><a0><bc><ed><b7><b1><ed><a0><bc><ed><b7><b7>",<NA>
+"1322","lesotho","<ed><a0><bc><ed><b7><b1><ed><a0><bc><ed><b7><b8>",<NA>
+"1323","lithuania","<ed><a0><bc><ed><b7><b1><ed><a0><bc><ed><b7><b9>",<NA>
+"1324","luxembourg","<ed><a0><bc><ed><b7><b1><ed><a0><bc><ed><b7><ba>",<NA>
+"1325","latvia","<ed><a0><bc><ed><b7><b1><ed><a0><bc><ed><b7><bb>",<NA>
+"1326","libya","<ed><a0><bc><ed><b7><b1><ed><a0><bc><ed><b7><be>",<NA>
+"1327","morocco","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><a6>",<NA>
+"1328","monaco","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><a8>",<NA>
+"1329","moldova","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><a9>",<NA>
+"1330","montenegro","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><aa>",<NA>
+"1331","st. martin","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><ab>",<NA>
+"1332","madagascar","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><ac>",<NA>
+"1333","marshall islands","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><ad>",<NA>
+"1334","macedonia","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><b0>",<NA>
+"1335","mali","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><b1>",<NA>
+"1336","myanmar (burma)","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><b2>",<NA>
+"1337","mongolia","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><b3>",<NA>
+"1338","macau sar china","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><b4>",<NA>
+"1339","northern mariana islands","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><b5>",<NA>
+"1340","martinique","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><b6>",<NA>
+"1341","mauritania","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><b7>",<NA>
+"1342","montserrat","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><b8>",<NA>
+"1343","malta","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><b9>",<NA>
+"1344","mauritius","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><ba>",<NA>
+"1345","maldives","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><bb>",<NA>
+"1346","malawi","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><bc>",<NA>
+"1347","mexico","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><bd>",<NA>
+"1348","malaysia","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><be>",<NA>
+"1349","mozambique","<ed><a0><bc><ed><b7><b2><ed><a0><bc><ed><b7><bf>",<NA>
+"1350","namibia","<ed><a0><bc><ed><b7><b3><ed><a0><bc><ed><b7><a6>",<NA>
+"1351","new caledonia","<ed><a0><bc><ed><b7><b3><ed><a0><bc><ed><b7><a8>",<NA>
+"1352","niger","<ed><a0><bc><ed><b7><b3><ed><a0><bc><ed><b7><aa>",<NA>
+"1353","norfolk island","<ed><a0><bc><ed><b7><b3><ed><a0><bc><ed><b7><ab>",<NA>
+"1354","nigeria","<ed><a0><bc><ed><b7><b3><ed><a0><bc><ed><b7><ac>",<NA>
+"1355","nicaragua","<ed><a0><bc><ed><b7><b3><ed><a0><bc><ed><b7><ae>",<NA>
+"1356","netherlands","<ed><a0><bc><ed><b7><b3><ed><a0><bc><ed><b7><b1>",<NA>
+"1357","norway","<ed><a0><bc><ed><b7><b3><ed><a0><bc><ed><b7><b4>",<NA>
+"1358","nepal","<ed><a0><bc><ed><b7><b3><ed><a0><bc><ed><b7><b5>",<NA>
+"1359","nauru","<ed><a0><bc><ed><b7><b3><ed><a0><bc><ed><b7><b7>",<NA>
+"1360","niue","<ed><a0><bc><ed><b7><b3><ed><a0><bc><ed><b7><ba>",<NA>
+"1361","new zealand","<ed><a0><bc><ed><b7><b3><ed><a0><bc><ed><b7><bf>",<NA>
+"1362","oman","<ed><a0><bc><ed><b7><b4><ed><a0><bc><ed><b7><b2>",<NA>
+"1363","panama","<ed><a0><bc><ed><b7><b5><ed><a0><bc><ed><b7><a6>",<NA>
+"1364","peru","<ed><a0><bc><ed><b7><b5><ed><a0><bc><ed><b7><aa>",<NA>
+"1365","french polynesia","<ed><a0><bc><ed><b7><b5><ed><a0><bc><ed><b7><ab>",<NA>
+"1366","papua new guinea","<ed><a0><bc><ed><b7><b5><ed><a0><bc><ed><b7><ac>",<NA>
+"1367","philippines","<ed><a0><bc><ed><b7><b5><ed><a0><bc><ed><b7><ad>",<NA>
+"1368","pakistan","<ed><a0><bc><ed><b7><b5><ed><a0><bc><ed><b7><b0>",<NA>
+"1369","poland","<ed><a0><bc><ed><b7><b5><ed><a0><bc><ed><b7><b1>",<NA>
+"1370","st. pierre &amp- miquelon","<ed><a0><bc><ed><b7><b5><ed><a0><bc><ed><b7><b2>",<NA>
+"1371","pitcairn islands","<ed><a0><bc><ed><b7><b5><ed><a0><bc><ed><b7><b3>",<NA>
+"1372","puerto rico","<ed><a0><bc><ed><b7><b5><ed><a0><bc><ed><b7><b7>",<NA>
+"1373","palestinian territories","<ed><a0><bc><ed><b7><b5><ed><a0><bc><ed><b7><b8>",<NA>
+"1374","portugal","<ed><a0><bc><ed><b7><b5><ed><a0><bc><ed><b7><b9>",<NA>
+"1375","palau","<ed><a0><bc><ed><b7><b5><ed><a0><bc><ed><b7><bc>",<NA>
+"1376","paraguay","<ed><a0><bc><ed><b7><b5><ed><a0><bc><ed><b7><be>",<NA>
+"1377","qatar","<ed><a0><bc><ed><b7><b6><ed><a0><bc><ed><b7><a6>",<NA>
+"1378","r„É‚©union","<ed><a0><bc><ed><b7><b7><ed><a0><bc><ed><b7><aa>",<NA>
+"1379","romania","<ed><a0><bc><ed><b7><b7><ed><a0><bc><ed><b7><b4>",<NA>
+"1380","serbia","<ed><a0><bc><ed><b7><b7><ed><a0><bc><ed><b7><b8>",<NA>
+"1381","russia","<ed><a0><bc><ed><b7><b7><ed><a0><bc><ed><b7><ba>",<NA>
+"1382","rwanda","<ed><a0><bc><ed><b7><b7><ed><a0><bc><ed><b7><bc>",<NA>
+"1383","saudi arabia","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><a6>",<NA>
+"1384","solomon islands","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><a7>",<NA>
+"1385","seychelles","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><a8>",<NA>
+"1386","sudan","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><a9>",<NA>
+"1387","sweden","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><aa>",<NA>
+"1388","singapore","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><ac>",<NA>
+"1389","st. helena","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><ad>",<NA>
+"1390","slovenia","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><ae>",<NA>
+"1391","svalbard &amp- jan mayen","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><af>",<NA>
+"1392","slovakia","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><b0>",<NA>
+"1393","sierra leone","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><b1>",<NA>
+"1394","san marino","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><b2>",<NA>
+"1395","senegal","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><b3>",<NA>
+"1396","somalia","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><b4>",<NA>
+"1397","suriname","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><b7>",<NA>
+"1398","south sudan","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><b8>",<NA>
+"1399","s„É‚£o tom„É‚© &amp- pr„É‚≠ncipe","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><b9>",<NA>
+"1400","el salvador","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><bb>",<NA>
+"1401","sint maarten","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><bd>",<NA>
+"1402","syria","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><be>",<NA>
+"1403","swaziland","<ed><a0><bc><ed><b7><b8><ed><a0><bc><ed><b7><bf>",<NA>
+"1404","tristan da cunha","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><a6>",<NA>
+"1405","turks &amp- caicos islands","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><a8>",<NA>
+"1406","chad","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><a9>",<NA>
+"1407","french southern territories","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><ab>",<NA>
+"1408","togo","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><ac>",<NA>
+"1409","thailand","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><ad>",<NA>
+"1410","tajikistan","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><af>",<NA>
+"1411","tokelau","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><b0>",<NA>
+"1412","timor-leste","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><b1>",<NA>
+"1413","turkmenistan","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><b2>",<NA>
+"1414","tunisia","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><b3>",<NA>
+"1415","tonga","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><b4>",<NA>
+"1416","turkey","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><b7>",<NA>
+"1417","trinidad &amp- tobago","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><b9>",<NA>
+"1418","tuvalu","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><bb>",<NA>
+"1419","taiwan","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><bc>",<NA>
+"1420","tanzania","<ed><a0><bc><ed><b7><b9><ed><a0><bc><ed><b7><bf>",<NA>
+"1421","ukraine","<ed><a0><bc><ed><b7><ba><ed><a0><bc><ed><b7><a6>",<NA>
+"1422","uganda","<ed><a0><bc><ed><b7><ba><ed><a0><bc><ed><b7><ac>",<NA>
+"1423","u.s. outlying islands","<ed><a0><bc><ed><b7><ba><ed><a0><bc><ed><b7><b2>",<NA>
+"1424","united nations","<ed><a0><bc><ed><b7><ba><ed><a0><bc><ed><b7><b3>",<NA>
+"1425","united states","<ed><a0><bc><ed><b7><ba><ed><a0><bc><ed><b7><b8>",<NA>
+"1426","uruguay","<ed><a0><bc><ed><b7><ba><ed><a0><bc><ed><b7><be>",<NA>
+"1427","uzbekistan","<ed><a0><bc><ed><b7><ba><ed><a0><bc><ed><b7><bf>",<NA>
+"1428","vatican city","<ed><a0><bc><ed><b7><bb><ed><a0><bc><ed><b7><a6>",<NA>
+"1429","st. vincent &amp- grenadines","<ed><a0><bc><ed><b7><bb><ed><a0><bc><ed><b7><a8>",<NA>
+"1430","venezuela","<ed><a0><bc><ed><b7><bb><ed><a0><bc><ed><b7><aa>",<NA>
+"1431","british virgin islands","<ed><a0><bc><ed><b7><bb><ed><a0><bc><ed><b7><ac>",<NA>
+"1432","u.s. virgin islands","<ed><a0><bc><ed><b7><bb><ed><a0><bc><ed><b7><ae>",<NA>
+"1433","vietnam","<ed><a0><bc><ed><b7><bb><ed><a0><bc><ed><b7><b3>",<NA>
+"1434","vanuatu","<ed><a0><bc><ed><b7><bb><ed><a0><bc><ed><b7><ba>",<NA>
+"1435","wallis &amp- futuna","<ed><a0><bc><ed><b7><bc><ed><a0><bc><ed><b7><ab>",<NA>
+"1436","samoa","<ed><a0><bc><ed><b7><bc><ed><a0><bc><ed><b7><b8>",<NA>
+"1437","kosovo","<ed><a0><bc><ed><b7><bd><ed><a0><bc><ed><b7><b0>",<NA>
+"1438","yemen","<ed><a0><bc><ed><b7><be><ed><a0><bc><ed><b7><aa>",<NA>
+"1439","mayotte","<ed><a0><bc><ed><b7><be><ed><a0><bc><ed><b7><b9>",<NA>
+"1440","south africa","<ed><a0><bc><ed><b7><bf><ed><a0><bc><ed><b7><a6>",<NA>
+"1441","zambia","<ed><a0><bc><ed><b7><bf><ed><a0><bc><ed><b7><b2>",<NA>
+"1442","zimbabwe","<ed><a0><bc><ed><b7><bf><ed><a0><bc><ed><b7><bc>",<NA>
