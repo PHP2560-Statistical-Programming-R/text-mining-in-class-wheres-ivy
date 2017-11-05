@@ -50,38 +50,37 @@ We will spend the next 2 weeks working on analyzing textual data in R. You will 
 
 ##Twitter Extraction Libraries
 ```{r}
-#install.packages("twitteR")
-#install.packages("ROAuth")
-#install.packages("streamR")
 library(twitteR)
 library(ROAuth)
 library(tidyverse)
 library(tidytext)
 library(tm)
 library(lubridate)
-library(textclean)
+library(stringr)
 library(sentimentr)
+library(stm)
+library(knitr)
+
 ```
 
 Check out this website (http://politicaldatascience.blogspot.com/2015/12/rtutorial-using-r-to-harvest-twitter.html)
 
 ```{r echo=FALSE}
-consumer_key <- "61QAqhSHk4n1wIGkkSJd4uWYc"
-consumer_secret <- "Wp5fauhEPj66F3IsTJVeAznJrq6ozNBRhrfyIweMjiLhsV4IV0"
-access_token <- "903307271752605696-3YvAs5p7R7y8ASXXLCQWRUnW0veUNFB"
-access_secret <- "PyrBLoT3ScECCfOsP2MlzOIW8MQW11lLsnihXu8r8k24q"
-
-setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
+setup_twitter_oauth(consumer_key = "61QAqhSHk4n1wIGkkSJd4uWYc", consumer_secret = "Wp5fauhEPj66F3IsTJVeAznJrq6ozNBRhrfyIweMjiLhsV4IV0", access_token = "903307271752605696-3YvAs5p7R7y8ASXXLCQWRUnW0veUNFB", access_secret = "PyrBLoT3ScECCfOsP2MlzOIW8MQW11lLsnihXu8r8k24q")
 ```
-```{r}
-tweets <- userTimeline("GuinnessUS", n=3200)
+```{r, eval=FALSE}
+guinness <- userTimeline("GuinnessUS", n=2000, since="2014-01-01")
 
-tw.df <- twListToDF(tweets)
+guinness.td <- twListToDF(guinness)
+
+guinness.td$reformattedtext <- iconv(guinness.td$text, from="UTF-8", to="ASCII", "byte")
+
+write_csv(guinness.td, "guinness.csv")
 ```
 
 From the collected tweets, it seems that what we need is (text, replyTOSN, created). 
-```{r}
-tweets.edit <- tw.df %>% 
+```{r, eval=FALSE}
+tweets.edit <- guinnes.td %>% 
   select(text, replyToSN, created) %>% 
   group_by(created) 
 
@@ -91,17 +90,10 @@ tweets.edit$day <- day(tweets.edit$created)
 tweets.edit$year <- year(tweets.edit$created)
 ```
 
-```{r}
-#cleaned text 
-tweets.edit$text <- replace_non_ascii(tweets.edit$text)
-tweets.edit$text <- mgsub(tweets.edit$text, c("\\s*http\\S+\\s*", "@\\w+"), c("",""), fixed = FALSE)
-tweets.edit$text <- mgsub(tweets.edit$text, "#", "ht")
-tweets.edit$text <- strip(tweets.edit$text)
-```
 
 Almost done at this point, all we need to do is the sentiment analysis, though I perfer to use sentimentR as opposed to what we did in the datacamp courses because it leverages valence shifters, and views the entire tweet as a whole. But I'll do both...
 
-```{r}
+```{r, eval=FALSE}
 #take out text, tidy it, word per row, and run sentiment analysis via inner join
 tweets <- tweets.edit$text
 tweets.td <- tidy(tweets)
@@ -120,4 +112,202 @@ tweets.edit.sentiment <- sentiment_by(tweets.edit$text)
 ```
 
 
+After playing around, we decided it was best to combine all the raw data and then begin cleaning it. 
+```{r}
+clean.beer <- read_csv("AllCleanedTweets.csv")
 
+#just want specific data as meta data --> data that would serve as a covariate: beer company and date 
+
+beer.data <- clean.beer %>% 
+  select(X1, text, screenName, weekday, favoriteCount)
+
+#process the data via STM textProcessor 
+proc.beer <- textProcessor(documents = beer.data$text, metadata = beer.data)
+
+out <- prepDocuments(proc.beer$documents, proc.beer$vocab, proc.beer$meta)
+beerdocs <- out$documents 
+beervocab <- out$vocab
+beermeta <- out$meta
+```
+
+```{r, eval=F}
+#need to instal Rtsne, rsvd, and geometry
+  #install.packages("Rtsne")
+  #install.packages("rsvd")
+  #install.packages("geometry")
+
+#from here, we can run the stm function for topic modelling 
+#there was a bug when k=0 it wont run, talked to creator, got it fixed, but need to install dev branch 
+
+install.packages("Rcpp")
+install.packages("devtools")
+install.packages("data.table")
+devtools::install_github("bstewart/stm", ref="development")
+
+set.seed(123)
+beerModelFit <- stm(document = beerdocs,
+                    vocab = beervocab,
+                    K =  0, #we can set k=0 to allow the program to find appropiate K as a starting point, later test K around it with searchK
+                    prevalence =~ screenName + weekday,
+                    data = beermeta,
+                    init.type = "Spectral"
+                    ) 
+
+
+#K determines the number of topics, we can use searchK to to figure out the appropriate number of topics
+set.seed(5679305)
+K <- c(5,10,15,20)
+storage <- searchK(docs,
+                   vocab,
+                   K,
+                   prevalence=~ screenName + weekday,
+                   data = meta)
+
+#reasonable K set at 30, model converaged after 423 iterations, saving model to be used for later 
+saveRDS(beerModelFit, "beerModel.rds")
+
+#k=0, converged after 80 iterations, 49 topics 
+saveRDS(beerModelFit, "beerModel49.rds")
+```
+
+We now have two potential models, but still, which one should we used? After running stm() with K=0, we had the algorithim pick out some Ks: 49, 51, 56, 59. So we will set K around that and run the searchK() function. It took forever, but I saved the output as an R object, and we can plot the results and see. 
+```{r, eval=F}
+searchk.test <- read_rds("searchk.rds")
+
+plot(searchk.test)
+
+searchk.df <- as.data.frame(searchk.test$results)
+
+#seems like 44, 49, 51 are all reasonable K, since we already have 49, lets run the model at k = 44 and compare
+
+beermodel44 <- stm(document = beerdocs,
+                    vocab = beervocab,
+                    K =  44,
+                    prevalence =~ screenName + weekday,
+                    data = beermeta,
+                    init.type = "Spectral",
+                    seed = 123456
+                    ) 
+
+saveRDS(beermodel44, "beermodel44.rds")
+
+thoughts44 <- findThoughts(beermodel44, beermeta$text, topics = c(25,38), n=3)
+plot(thoughts44)
+```
+There doesn't seem to be much of a difference between 44 topics and 49 topics. So we will stick with 49 topics, especially given the jump in residuals onwards after 49. 
+
+
+
+The STM package leverages metadata as part of the topic modelling process. This is denoted by the prevalence argument. It takes in the metadata: sceenName (the beer company) & weekday, and provides us with 30 topics for which the tweets can fall under. The two metadata is describing how the prevalence of the topics is influenced by the two covariates -- who is tweeting, and on what day are they tweeting. 
+
+The first reason why screenName is an important covariate is quite simple: who is tweeting matters. We also have reason to believe that the topic of their tweets will change based on the day, ex. TGIF, or Monday night Football. Tess, will be the one who will help explore topic prevalance given day of the week. 
+
+For now, I will focus on topic prevalence given the beer company. Who is tweeting, and what are they tweeting about? However, I am still using the weekday covariate in order to train my model to be as accurate as possible. Just because I will not focus on weekday does not mean that it is not necessary when developing our model. STM's greatest advantage over other topic modelling techniques is its ability to include metadata to help better describe and train the topic outputs. 
+
+In order to investigate the beer companies, we need to first answer some more questions: 
+- "What are the most popular topics?"
+- "Who tweets about these topics the most?"
+- "Which topics recieve the most engagement? (Favorites & Retweets)"
+
+Thus we need to identify the topics with the highest frequenct among our tweets, visualize who is tweeting them, and then organize them engagement. 
+```{r, include=T}
+#First let's just play around with some functions in STM -> findThoughts will help us locate the document most closely associated with each topic, this will come in handy later when we know which topic is most frequent
+
+BeerModel49 <- readRDS("beerModel49.rds")
+
+thoughts <- findThoughts(BeerModel49, beermeta$text, topics=c(48), n=3)
+
+plot(thoughts)
+```
+
+I want to check to see if the documents pulled up from findThoughts matches the one in the metadata. We can do this with plotQuotes(thoughts), it will let us know which document it is using and then we can index to see if they match. 
+
+```{r}
+#we can see which document plot(thoughts) is using with -plotQuote(thoughts)-
+beermeta$text[c(3870,2293,3871)] #looks good! 
+
+```
+
+From here, let's add the most popular topic corresponding to each tweet as a new variable for our dataframe. We can simply use the "$theta" from the stm model to see all the values. If we take a look at theta from the model, we see that every document has a corresponding theta value for EACH topic. 
+
+```{r}
+#what does it look like? 
+theta <- as.data.frame(BeerModel49$theta)
+head(theta, n=2)
+
+#add in function that take the column name with the highest value, and add it to a variable we call "topic" and then create a varaible that gives us the actual value, and then we need to create a variable "X1" so we can do a join 
+
+theta$topic <- apply(theta[,1:49], 1, which.max)
+theta$topic.value <- apply(theta[, 1:49], 1, max)
+theta$X1 <- 1:nrow(theta)
+
+#take only variables of interest 
+theta.clean <- theta %>% 
+  select(X1, topic, topic.value)
+
+#prepDoc deleted lines in beermeta, therefore X1 is not numbered correctly, have to delete and renumber, the rows 
+
+beermeta <- within(beermeta, rm(X1))
+
+beermeta$X1 <- 1:nrow(beermeta)
+
+beermeta[8,] #X1 = 8, while row num = 9, but it is displayed correctly, X1 matches order correctly
+
+#now that our beermeta's X1 is labeled correctly and corresponds with the actual number of the document, we can join the two datasets using X1 
+
+beer.final <- beermeta %>%
+  left_join(theta.clean, by = "X1")
+
+```
+
+Awesome, now we have a data frame with all our variables of interest, based on the documents that STM used for the text processing, notice that we started with 8459, and now we have 8285. So what can we do now exactly? 
+
+We know *who* tweeted *what* and *when* (on what day). From this we can do the following: 
+*find the most tweeted topic by beer company 
+*find the most favorited topic 
+
+```{r, echo=FALSE}
+#let's figure out what the most popular topic is, and who tweets about them the most 
+company.topic.freq <- beer.final %>% 
+  select(screenName, topic) %>%
+  group_by(screenName) %>% 
+  count(topic) %>%
+  ungroup() %>%
+  arrange(desc(n)) 
+
+company.topic.freq
+
+#we can check/visualize this by creating a bar chart for each topic 
+counts <- table(beer.final$topic)
+barplot(counts, main = "Frequency of Topics", xlab = "Topic Number")
+
+#now let's see which topic is favorited the most, and which company is it coming from 
+favorite.topic.freq <- beer.final %>% 
+  select(screenName, topic, favoriteCount) %>%
+  group_by(screenName, topic) %>% 
+  summarise(favorites = sum(favoriteCount)) %>% 
+  ungroup() %>%
+  arrange(desc(favorites))
+
+favorite.topic.freq
+
+#just for fun let's see which company has the most favorites, along with how many tweets they have 
+most.fav.company <- beer.final %>% 
+  select(screenName, favoriteCount) %>%
+  group_by(screenName) %>%
+  summarise(favorited = sum(favoriteCount),
+            ntweets = n(),
+            ratio = favorited/ntweets) %>%
+  arrange(desc(favorited))
+
+most.fav.company 
+```
+Sweet, now we know which topic is tweeted the most by our beer companies, and also which topics get favorited the most! With this, we now have some topics of interest that is worth further investigation: 
+
+1. Guinness: Topic 39
+2. BlueMoon: Topic 41
+3. DosEquis: Topic 13
+4. Budlight: Topic 26
+5. Tsingtao: Topic 43 
+
+There are multiple ways we can do on about investigating out topics, but since we already have the theta scores for each tweet, we can filter for tweets most associated with each topic! 
