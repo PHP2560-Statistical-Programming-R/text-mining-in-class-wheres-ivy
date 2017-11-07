@@ -223,7 +223,7 @@ install.packages("devtools")
 install.packages("data.table")
 devtools::install_github("bstewart/stm", ref="development")
 
-set.seed(123)
+set.seed(999)
 beerModelFit <- stm(document = beerdocs,
                     vocab = beervocab,
                     K =  0, #we can set k=0 to allow the program to find appropiate K as a starting point, later test K around it with searchK
@@ -243,7 +243,7 @@ storage <- searchK(docs,
                    data = meta)
 
 #reasonable K set at 30, model converaged after 423 iterations, saving model to be used for later 
-saveRDS(beerModelFit, "beerModel.rds")
+saveRDS(beerModelFit, "beerModelformatted.rds")
 
 #k=0, converged after 80 iterations, 49 topics 
 saveRDS(beerModelFit, "beerModel49.rds")
@@ -290,9 +290,9 @@ Thus we need to identify the topics with the highest frequenct among our tweets,
 ``` r
 #First let's just play around with some functions in STM -> findThoughts will help us locate the document most closely associated with each topic, this will come in handy later when we know which topic is most frequent
 
-BeerModel49 <- readRDS("beerModel49.rds")
+BeerModelFormatted <- readRDS("beerModelformatted.rds")
 
-thoughts <- findThoughts(BeerModel49, beermeta$text, topics=c(48), n=3)
+thoughts <- findThoughts(BeerModelFormatted, beermeta$text, topics=c(48), n=3)
 
 plot(thoughts)
 ```
@@ -302,49 +302,50 @@ plot(thoughts)
 I want to check to see if the documents pulled up from findThoughts matches the one in the metadata. We can do this with plotQuotes(thoughts), it will let us know which document it is using and then we can index to see if they match.
 
 ``` r
-#we can see which document plot(thoughts) is using with -plotQuote(thoughts)-
-beermeta$text[c(3870,2293,3871)] #looks good! 
+#we can see which document plot(thoughts) is using with 
+#plotQuote(thoughts)
+beermeta$text[c(7722,4150,7625)] #looks good! 
 ```
 
-    ## [1] "Beer cocktail for whiskey lovers? Try a boilermaker! See Instastory  (2-drink serve) ^Heathe"                                          
-    ## [2] "If you're going to RiotFest this weekend, stop by our Feast of the Brave food truck to complement your music with some curious cuisine."
-    ## [3] "Beer &amp; whiskey? Try a boilermaker! See Instastory  for ideas on this 2-drink serve. ^Heathe"
+    ## [1] "Our Mountain Abbey Ale is currently in hibernation, but we recommend trying our new Cappuccino Oatmeal Stout. It's delicious!"
+    ## [2] "Dublin Porter and West Indies Porters are back (for a limited time) in our Brewers Collection 12-pack."                      
+    ## [3] "Reward yourself for wrapping up your holidaygiftlist by slowing down with a Cappuccino Oatmeal Stout."
 
 From here, let's add the most popular topic corresponding to each tweet as a new variable for our dataframe. We can simply use the "$theta" from the stm model to see all the values. If we take a look at theta from the model, we see that every document has a corresponding theta value for EACH topic.
 
 ``` r
 #what does it look like? 
-theta <- as.data.frame(BeerModel49$theta)
+theta <- as.data.frame(BeerModelFormatted$theta)
 head(theta, n=2)
 ```
 
-    ##            V1           V2           V3           V4           V5
-    ## 1 0.007865664 0.0027628381 0.0005036788 0.0025224520 0.0028438845
-    ## 2 0.002537999 0.0008860487 0.0001728158 0.0009030535 0.0009633239
-    ##             V6           V7          V8          V9         V10
-    ## 1 0.0005174515 0.0003680651 0.007138091 0.024534425 0.009673043
-    ## 2 0.0001739523 0.0001221066 0.002228754 0.004489723 0.002566767
-    ##           V11         V12         V13         V14         V15         V16
-    ## 1 0.013141572 0.019481669 0.004664239 0.019077682 0.001439228 0.003793239
-    ## 2 0.004129035 0.008391327 0.002071543 0.005907616 0.000645747 0.001836521
-    ##            V17         V18         V19        V20         V21        V22
-    ## 1 0.0031507765 0.014920887 0.035841947 0.03898087 0.028341689 0.05621452
-    ## 2 0.0006517593 0.003449373 0.009926435 0.01057157 0.006446329 0.02864148
-    ##          V23        V24        V25        V26         V27        V28
-    ## 1 0.21510619 0.02100138 0.02947897 0.04706526 0.047050953 0.03295533
-    ## 2 0.02203468 0.01100675 0.01002627 0.74802929 0.003626443 0.01266532
-    ##           V29         V30        V31         V32         V33        V34
-    ## 1 0.009098139 0.008017583 0.02065765 0.022242294 0.015723293 0.03046125
-    ## 2 0.002882066 0.002117129 0.00736921 0.008832548 0.004078084 0.01005040
-    ##           V35         V36         V37         V38          V39        V40
-    ## 1 0.014965483 0.047819274 0.013928431 0.006935276 0.0022153746 0.05135653
-    ## 2 0.003876602 0.009459452 0.005093274 0.001788327 0.0007439086 0.01672552
-    ##           V41         V42         V43         V44         V45         V46
-    ## 1 0.007592780 0.007931409 0.005317182 0.008470093 0.005865007 0.004564943
-    ## 2 0.004293087 0.003377488 0.001581393 0.002591991 0.001841413 0.001646053
-    ##           V47         V48         V49
-    ## 1 0.016848075 0.001288968 0.008264965
-    ## 2 0.003229313 0.000570310 0.002750393
+    ##             V1           V2           V3           V4           V5
+    ## 1 0.0012138726 5.354624e-05 6.600276e-06 0.0003862886 8.996256e-05
+    ## 2 0.0008069851 4.751433e-05 7.432713e-06 0.0003213132 7.398028e-05
+    ##             V6          V7         V8          V9         V10         V11
+    ## 1 0.0011154561 0.001726719 0.05891677 0.010534933 0.004976748 0.006928108
+    ## 2 0.0006481378 0.001086237 0.01533702 0.006187848 0.003919064 0.002584185
+    ##          V12        V13         V14         V15        V16         V17
+    ## 1 0.01836288 0.02092130 0.002072807 0.001477274 0.03997116 0.008357849
+    ## 2 0.01569480 0.01218232 0.001186805 0.001734603 0.67694868 0.003893657
+    ##           V18          V19         V20        V21        V22         V23
+    ## 1 0.003663303 0.0004659414 0.001187623 0.02619621 0.43249031 0.007022635
+    ## 2 0.002627707 0.0001706386 0.000750880 0.03096827 0.03638756 0.004211418
+    ##           V24          V25         V26         V27         V28         V29
+    ## 1 0.015247580 0.0001420617 0.026636952 0.002877781 0.012803875 0.009170494
+    ## 2 0.007955355 0.0001473962 0.005895344 0.001862763 0.004864842 0.004851111
+    ##          V30        V31        V32         V33         V34         V35
+    ## 1 0.09898867 0.02093405 0.02031150 0.013332354 0.023438255 0.008406186
+    ## 2 0.01482492 0.01193808 0.03317774 0.006728066 0.008837397 0.006994188
+    ##           V36         V37         V38         V39         V40         V41
+    ## 1 0.002140152 0.001915548 0.006452382 0.001984201 0.014018952 0.010802190
+    ## 2 0.002092515 0.001543615 0.004970625 0.001953978 0.008063355 0.007823309
+    ##           V42         V43          V44         V45        V46         V47
+    ## 1 0.002216970 0.004283433 0.0007304083 0.010488766 0.01068837 0.001766027
+    ## 2 0.001972908 0.004488310 0.0005937727 0.007427334 0.01123762 0.002275594
+    ##           V48         V49         V50         V51         V52         V53
+    ## 1 0.001377499 0.015270428 0.003431975 0.003643007 0.005492203 0.002869433
+    ## 2 0.003345014 0.006601138 0.003163851 0.003575031 0.001314345 0.001703424
 
 ``` r
 #add in function that take the column name with the highest value, and add it to a variable we call "topic" and then create a varaible that gives us the actual value, and then we need to create a variable "X1" so we can do a join 
@@ -382,39 +383,39 @@ Awesome, now we have a data frame with all our variables of interest, based on t
 
 We know *who* tweeted *what* and *when* (on what day). From this we can do the following: *find the most tweeted topic by beer company *find the most favorited topic
 
-    ## # A tibble: 161 × 3
+    ## # A tibble: 152 x 3
     ##        screenName topic     n
     ##             <chr> <int> <int>
-    ## 1      GuinnessUS    39   623
-    ## 2  BlueMoonBrewCo    41   445
-    ## 3  BlueMoonBrewCo    21   444
-    ## 4        DosEquis    13   442
-    ## 5  BlueMoonBrewCo    15   355
-    ## 6  BlueMoonBrewCo    33   306
-    ## 7  BlueMoonBrewCo    46   274
-    ## 8        budlight    26   267
-    ## 9  BlueMoonBrewCo     9   231
-    ## 10       tsingtao    43   229
-    ## # ... with 151 more rows
+    ##  1 BlueMoonBrewCo    37   535
+    ##  2 BlueMoonBrewCo    45   525
+    ##  3     GuinnessUS    14   364
+    ##  4 BlueMoonBrewCo    19   335
+    ##  5     GuinnessUS    44   317
+    ##  6       budlight    30   309
+    ##  7       budlight    22   304
+    ##  8       DosEquis    18   292
+    ##  9       DosEquis    25   253
+    ## 10 BlueMoonBrewCo    36   252
+    ## # ... with 142 more rows
 
 ![](text-mining.MN_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-13-1.png)
 
-    ## # A tibble: 161 × 3
+    ## # A tibble: 152 x 3
     ##        screenName topic favorites
     ##             <chr> <int>     <int>
-    ## 1        DosEquis    13     13849
-    ## 2        DosEquis     8      9612
-    ## 3      GuinnessUS    39      8285
-    ## 4        DosEquis    10      5607
-    ## 5        DosEquis    16      5512
-    ## 6        DosEquis    45      4707
-    ## 7        DosEquis    42      2910
-    ## 8  BlueMoonBrewCo    46      2251
-    ## 9        DosEquis    27      1931
-    ## 10       DosEquis    11      1684
-    ## # ... with 151 more rows
+    ##  1       DosEquis    18     12349
+    ##  2       DosEquis    25      9003
+    ##  3     GuinnessUS    44      6672
+    ##  4       DosEquis    46      3767
+    ##  5       DosEquis    34      3665
+    ##  6       DosEquis    15      3503
+    ##  7     GuinnessUS    14      2937
+    ##  8 BlueMoonBrewCo    39      2699
+    ##  9       DosEquis    13      2651
+    ## 10       DosEquis    12      2593
+    ## # ... with 142 more rows
 
-    ## # A tibble: 5 × 4
+    ## # A tibble: 5 x 4
     ##       screenName favorited ntweets     ratio
     ##            <chr>     <int>   <int>     <dbl>
     ## 1       DosEquis     58197    1616 36.012995
@@ -425,10 +426,49 @@ We know *who* tweeted *what* and *when* (on what day). From this we can do the f
 
 Sweet, now we know which topic is tweeted the most by our beer companies, and also which topics get favorited the most! With this, we now have some topics of interest that is worth further investigation:
 
-1.  Guinness: Topic 39
-2.  BlueMoon: Topic 41
-3.  DosEquis: Topic 13
-4.  Budlight: Topic 26
-5.  Tsingtao: Topic 43
+``` r
+#okay, lets take the 3 most favorited topics for each company, time to make a function! 
+header <- function(data, name) {
+  x1 <- data %>%
+    filter(screenName == name)
+  return(head(x1, n=3))
+}
+
+header(favorite.topic.freq, "budlight")
+```
+
+    ## # A tibble: 3 x 3
+    ##   screenName topic favorites
+    ##        <chr> <int>     <int>
+    ## 1   budlight    16      1571
+    ## 2   budlight    12       767
+    ## 3   budlight    32       608
+
+``` r
+#most tweeted topic by company? 
+header(company.topic.freq, "budlight")
+```
+
+    ## # A tibble: 3 x 3
+    ##   screenName topic     n
+    ##        <chr> <int> <int>
+    ## 1   budlight    30   309
+    ## 2   budlight    22   304
+    ## 3   budlight    21   196
 
 There are multiple ways we can do on about investigating out topics, but since we already have the theta scores for each tweet, we can filter for tweets most associated with each topic!
+
+-   Most Favorited:
+    -   DosEquis: 18, 25, 46
+    -   BlueMoon: 39, 36, 47
+    -   Guinness: 44, 14, 48
+    -   TsingTao: 20, 1, 3
+    -   Budlight: 16, 12, 32
+-   Most Tweeted:
+    -   DosEquis: 18, 25, 15
+    -   BlueMoon: 37, 45, 19
+    -   Guinness: 14, 44, 41
+    -   TinsgTao: 3, 20, 1
+    -   Budlight: 30, 22, 21
+
+We can see that for DosEquis, their most favorited and most tweeted overlap a lot. While TsingTao overlap completely! So From this pool, let's investigate the 3 companies with the most overlap in topics: DosEquis, Guinness, and TsingTao. We will look at topics: *18, 25, 14, 44, 3, 20, 1*

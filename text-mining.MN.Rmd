@@ -144,7 +144,7 @@ install.packages("devtools")
 install.packages("data.table")
 devtools::install_github("bstewart/stm", ref="development")
 
-set.seed(123)
+set.seed(999)
 beerModelFit <- stm(document = beerdocs,
                     vocab = beervocab,
                     K =  0, #we can set k=0 to allow the program to find appropiate K as a starting point, later test K around it with searchK
@@ -164,7 +164,7 @@ storage <- searchK(docs,
                    data = meta)
 
 #reasonable K set at 30, model converaged after 423 iterations, saving model to be used for later 
-saveRDS(beerModelFit, "beerModel.rds")
+saveRDS(beerModelFit, "beerModelformatted.rds")
 
 #k=0, converged after 80 iterations, 49 topics 
 saveRDS(beerModelFit, "beerModel49.rds")
@@ -213,9 +213,9 @@ Thus we need to identify the topics with the highest frequenct among our tweets,
 ```{r, include=T}
 #First let's just play around with some functions in STM -> findThoughts will help us locate the document most closely associated with each topic, this will come in handy later when we know which topic is most frequent
 
-BeerModel49 <- readRDS("beerModel49.rds")
+BeerModelFormatted <- readRDS("beerModelformatted.rds")
 
-thoughts <- findThoughts(BeerModel49, beermeta$text, topics=c(48), n=3)
+thoughts <- findThoughts(BeerModelFormatted, beermeta$text, topics=c(48), n=3)
 
 plot(thoughts)
 ```
@@ -223,8 +223,9 @@ plot(thoughts)
 I want to check to see if the documents pulled up from findThoughts matches the one in the metadata. We can do this with plotQuotes(thoughts), it will let us know which document it is using and then we can index to see if they match. 
 
 ```{r}
-#we can see which document plot(thoughts) is using with -plotQuote(thoughts)-
-beermeta$text[c(3870,2293,3871)] #looks good! 
+#we can see which document plot(thoughts) is using with 
+#plotQuote(thoughts)
+beermeta$text[c(7722,4150,7625)] #looks good! 
 
 ```
 
@@ -232,7 +233,7 @@ From here, let's add the most popular topic corresponding to each tweet as a new
 
 ```{r}
 #what does it look like? 
-theta <- as.data.frame(BeerModel49$theta)
+theta <- as.data.frame(BeerModelFormatted$theta)
 head(theta, n=2)
 
 #add in function that take the column name with the highest value, and add it to a variable we call "topic" and then create a varaible that gives us the actual value, and then we need to create a variable "X1" so we can do a join 
@@ -301,13 +302,40 @@ most.fav.company <- beer.final %>%
   arrange(desc(favorited))
 
 most.fav.company 
+
 ```
 Sweet, now we know which topic is tweeted the most by our beer companies, and also which topics get favorited the most! With this, we now have some topics of interest that is worth further investigation: 
 
-1. Guinness: Topic 39
-2. BlueMoon: Topic 41
-3. DosEquis: Topic 13
-4. Budlight: Topic 26
-5. Tsingtao: Topic 43 
+```{r}
+#okay, lets take the 3 most favorited topics for each company, time to make a function! 
+header <- function(data, name) {
+  x1 <- data %>%
+    filter(screenName == name)
+  return(head(x1, n=3))
+}
+
+header(favorite.topic.freq, "budlight")
+
+#most tweeted topic by company? 
+header(company.topic.freq, "budlight")
+```
 
 There are multiple ways we can do on about investigating out topics, but since we already have the theta scores for each tweet, we can filter for tweets most associated with each topic! 
+
+* Most Favorited: 
+    + DosEquis: 18, 25, 46
+    + BlueMoon: 39, 36, 47
+    + Guinness: 44, 14, 48
+    + TsingTao: 20, 1, 3
+    + Budlight: 16, 12, 32
+
+* Most Tweeted: 
+    + DosEquis: 18, 25, 15
+    + BlueMoon: 37, 45, 19
+    + Guinness: 14, 44, 41
+    + TinsgTao: 3, 20, 1
+    + Budlight: 30, 22, 21
+
+We can see that for DosEquis, their most favorited and most tweeted overlap a lot. While TsingTao overlap completely! So From this pool, let's investigate the 3 companies with the most overlap in topics: DosEquis, Guinness, and TsingTao. We will look at topics: *18, 25, 14, 44, 3, 20, 1*
+
+
